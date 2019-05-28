@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Tasbeeh Counter</title>
+	<link rel="stylesheet" href="includes/css/style.css">
+	<link rel="stylesheet" href="includes/css/shortcut.css">
+</head>
+<body>
+	<section>
+		<header>
+			<nav>
+				<div class="header">Header</div>	
+			</nav>
+		</header>
+	</section>
+
+	<section>
+		<main>
+			<div class="main">
+				<div class="img_read">
+					<div class="image_view">
+						<img src="C:\Users\My Pc\Desktop\Anas Udemy\Download/download (2).jpg" alt="">
+					</div>
+					<input type="file" accept='image/*' id="image">
+					<label for="image"><span id="addImage">Add Image</span></label>
+					<span id="imageName">Hello jee</span>
+				</div>
+
+				<div class="tasbeeh">
+					<div class="brand">
+						<span >Tasbeeh Count</span>
+					</div>
+		
+					<div class="total_number">
+						<input type="number" id='numbers' value='0'>
+					</div>
+
+					<div class="reset">
+						<button class="reset_button" onclick="reset()"></button>
+					</div>
+
+					<div class="add">
+						<button class="add_button" onclick="addOne()"></button>
+					</div>
+
+					<div class="deduct">
+						<button class="deduct_button" onclick="deduct()"></button>
+					</div>
+
+				</div>
+			</div>			
+		</main>
+	</section>
+
+	<section>
+		<footer>
+			footer
+		</footer>
+	</section>
+
+	
+
+<!--ALL JS SCRIPT-->
+		<script src="includes/js/script.js"></script>
+		<script src="includes/js/jquery.min.js"></script>
+
+</body>
+</html>
