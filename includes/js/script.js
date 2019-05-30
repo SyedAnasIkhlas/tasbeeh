@@ -1,22 +1,26 @@
-function reset()
+function reset(s)
 {
 	var numbers = $("#numbers").val();
 	var num = parseInt(numbers);
 	var reset = num * 0;
+	$(".reset_button").effect( "shake" );
+	navigator.vibrate(s);
 	return $("#numbers").val(reset);
-	$(this).effect( "shake" );
+
 }
 
-function addOne()
+function addOne(s)
 {
 	var numbers = $("#numbers").val();
 	var num = parseInt(numbers);
 	var addOne = num + 1;
+	navigator.vibrate(s);
+	$(".add_button").effect( "shake" );
 	return $("#numbers").val(addOne);
-	$(this).effect( "shake" );
+	
 }
 
-function deduct()
+function deduct(s)
 {
 	var numbers = $("#numbers").val();
 	var num = parseInt(numbers);
@@ -29,9 +33,10 @@ function deduct()
 	{
 		var deduct = num - 1;
 	}
-	
+	$(".deduct_button").effect( "shake" );
+	navigator.vibrate(s);
 	return $("#numbers").val(deduct);
-	$(this).effect( "shake" );
+	
 }
 
 const uploadFileButton = document.getElementById("addImage");

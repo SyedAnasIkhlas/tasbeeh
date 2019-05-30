@@ -2,6 +2,7 @@
 {
 	margin: 0px;
 	padding: 0px;
+	font-family: 'Varela Round', sans-serif;
 }
 
 .main
@@ -203,3 +204,36 @@ footer
 		height:40px;
 	}
 }
+
+textarea
+{
+	resize: none;
+	box-sizing:border-box;
+	padding-left:5px;
+	padding-top:2px;
+	margin-top:12px;
+
+}
+
+.img_read
+{
+	text-align:center;
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	align-items:center;
+	
+}
+
+.image_view
+{
+	border:1px solid #b7a6a6;
+	width:145px;
+	height:140px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:15px;
+	
+}
+
