@@ -4,6 +4,7 @@ function reset()
 	var num = parseInt(numbers);
 	var reset = num * 0;
 	return $("#numbers").val(reset);
+	$(this).effect( "shake" );
 }
 
 function addOne()
@@ -12,6 +13,7 @@ function addOne()
 	var num = parseInt(numbers);
 	var addOne = num + 1;
 	return $("#numbers").val(addOne);
+	$(this).effect( "shake" );
 }
 
 function deduct()
@@ -29,6 +31,7 @@ function deduct()
 	}
 	
 	return $("#numbers").val(deduct);
+	$(this).effect( "shake" );
 }
 
 const uploadFileButton = document.getElementById("addImage");
