@@ -2,19 +2,28 @@ function reset()
 {
 	var numbers = $("#numbers").val();
 	var num = parseInt(numbers);
-	var reset = num * 0;
-	navigator.vibrate(200);
+	var confirmReset= confirm("Press 'Ok' if you want to reset your progress");
 
-	var $el = $(".reset_button"),
-    x = 100,
-    originalColor = $el.css("background");
+	 if (confirmReset == true) 
+	 {
+		var reset = num * 0;
+		navigator.vibrate(200);
 
-	$el.css("background", "#77ff7b");
-	setTimeout(function(){
-	  $el.css("background", originalColor);
-	}, x);
+		var $el = $(".reset_button"),
+	    x = 100,
+	    originalColor = $el.css("background");
 
-	return $("#numbers").val(reset);
+		$el.css("background", "#77ff7b");
+		setTimeout(function(){
+		  $el.css("background", originalColor);
+		}, x);
+
+		return $("#numbers").val(reset);
+	}
+	else
+	{
+		return $("#numbers").val(num);
+	}
 
 }
 
