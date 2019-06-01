@@ -25,11 +25,11 @@
 			<div class="main">
 				<div class="img_read">
 					<div class="image_view">
-						<img src="" alt="" id="image_view">
-						<input type="file" accept='image/*' id="image">
-						<label for="image"><span id="addImage">Add Image</span></label><br>
-						<span id="imageName"></span>
+						<img id="output"/>
 					</div>
+					<span class="img_selector">
+						<input type="file" accept="image/*" onchange="loadFile(event)">	
+					</span>
 					
 				</div><br>
 					
@@ -70,12 +70,12 @@
 		</footer>
 	</section>
 
+
 	
 
 <!--ALL JS SCRIPT-->
 		<script src="includes/js/script.js"></script>
 		<script src="includes/js/jquery.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
 </body>
 </html>

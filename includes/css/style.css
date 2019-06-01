@@ -21,6 +21,37 @@
 
 }
 
+.img_read
+{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.image_view
+{
+	overflow:auto;
+	resize:auto;
+	padding:5px;
+	border:1px solid black;
+}
+
+.img_selector
+{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:100%;
+
+	margin: 0 auto;
+}
+
+.image_view img
+{
+	height:100%;
+	width:100%;
+}
+
 .brand_name
 {
 	font-family: 'Pacifico', cursive;
@@ -35,10 +66,6 @@ header
 	align-items:center;
 }
 
-.img_read
-{
-
-}
 
 .main
 {
@@ -53,7 +80,7 @@ header
 	height:250px;
 	background-color:#fbf9f5;
 	border-radius:20px;
-	border:1px solid #eee;
+	border:1px solid #bfb1b1;
 }
 
 .brand
@@ -74,7 +101,7 @@ header
 	display:flex;
 	flex-direction:column;
 	border-radius:2px;
-	border:1px solid #adabab;
+	border:1px solid #909090;
 	box-sizing:border-box;
 	overflow:hidden;
 	padding:0px;
@@ -110,7 +137,7 @@ header
 	height:25px;
 	border-radius:50%;
 	border:none;
-	border:1px solid #adabab;
+	border:1px solid #5a5858;
 	outline: none;
 }
 
@@ -131,7 +158,7 @@ header
 	width:60px;
 	border:none;
 	border-radius:50%;
-	border:1px solid #adabab;
+	border:1px solid #6b6666;
 	outline: none;
 }
 
@@ -150,7 +177,7 @@ header
 	height:20px;
 	border-radius:50%;
 	border:none;
-	border:1px solid #adabab;
+	border:1px solid #585252;
 	outline: none;
 }
 

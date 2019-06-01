@@ -76,15 +76,8 @@ function deduct()
 	
 }
 
-const uploadFileButton = document.getElementById("addImage");
-const customText = document.getElementById("imageName");
 
-uploadFileButton.addEventListener("change", function() {
-  if (uploadFileButton.value) {
-    customText.innerHTML = uploadFileButton.value.match(
-      /[\/\\]([\w\d\s\.\-\(\)]+)$/
-    )[1];
-  } else {
-    customText.innerHTML = "No image selected.";
-  }
-});
+function loadFile(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+  };
