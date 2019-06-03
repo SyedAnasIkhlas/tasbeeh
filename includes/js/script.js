@@ -7,13 +7,13 @@ function reset()
 	 if (confirmReset == true) 
 	 {
 		var reset = num * 0;
-		navigator.vibrate(200);
+		navigator.vibrate(500);
 
 		var $el = $(".reset_button"),
 	    x = 100,
 	    originalColor = $el.css("background");
 
-		$el.css("background", "#77ff7b");
+		$el.css("background", "#F44336");
 		setTimeout(function(){
 		  $el.css("background", originalColor);
 		}, x);
@@ -67,7 +67,7 @@ function deduct()
     x = 100,
     originalColor = $el.css("background");
 
-	$el.css("background", "#77ff7b");
+	$el.css("background", "#F44336");
 	setTimeout(function(){
 	  $el.css("background", originalColor);
 	}, x);

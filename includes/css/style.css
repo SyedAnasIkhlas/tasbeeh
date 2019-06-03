@@ -30,8 +30,8 @@
 
 .image_view
 {
-	overflow:auto;
-	resize:auto;
+	 resize: both;
+  	overflow: auto;
 	padding:5px;
 	border:1px solid black;
 }
