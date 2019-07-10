@@ -38,6 +38,12 @@
     border:1px solid #bfb0b0;
     border-radius:2px;
 }
+
+.classic-tasbeeh-view button
+{
+    width:60px;
+    height:60px;
+}
 .classic-tasbeeh
 {
     margin:0 auto;
