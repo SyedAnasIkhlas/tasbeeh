@@ -5,6 +5,11 @@
 	font-family: 'Varela Round', sans-serif;
 }
 
+body
+{
+	font-family:Poppons;
+}
+
 
 @font-face {
   font-family: digital;
@@ -128,16 +133,19 @@
 	align-items:flex-end;
 	width:80%;
 	margin:0 auto;
+
 }
 
 .reset_button
 {
+	font-family:Poppins;
 	width:25px;
 	height:25px;
 	border-radius:50%;
 	border:none;
 	border:1px solid #5a5858;
 	outline: none;
+	background: radial-gradient(circle at 100px 100px, #Fff, #F44336);
 }
 
 .add
@@ -178,6 +186,13 @@
 	border:none;
 	border:1px solid #585252;
 	outline: none;
+	background: radial-gradient(circle at 100px 100px, #Fff, #ff4133);
+}
+
+.deduct_button span
+{
+	color:#000;
+	font-size:20px;
 }
 
 

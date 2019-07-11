@@ -70,6 +70,7 @@ function addOne()
 	else
 	{
 		targetNum = targetNum-1;
+		$(".target").flip('toggle');
 		$(".target input").val(targetNum)
 		$("#numbers").val(addOne);
 
@@ -121,6 +122,7 @@ function deduct()
 	{
 		if (num != 0) 
 		{
+			$(".target").flip('toggle');
 			targetNum = targetNum+1;
 			$(".target input").val(targetNum)
 			$("#numbers").val(deduct);
