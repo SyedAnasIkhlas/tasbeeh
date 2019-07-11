@@ -1,0 +1,41 @@
+.footer-content
+{
+    background:#93a29d;
+    height:20vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:80%;
+    margin:0 auto;
+    padding:20px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+
+.footer-content .mode
+{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-content .more
+{
+    display:flex;
+    flex-direction:column;
+}
+
+footer a
+{
+    color:#fff;
+    font-size:14px;
+}
+
+footer a:hover
+{
+    color:#6dcad6;
+}
+
+footer h2
+{
+    font-size:15px;
+}

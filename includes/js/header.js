@@ -8,15 +8,15 @@ $(window).scroll(function()
 {
 	if ($(this).scrollTop()>20) 
 	{
-		$(".nav").css({display: 'none'});
-		$(".burger.burger-scroll").css({display: 'block'});
+		// $(".nav").css({display: 'none'});
+		$(".menu").css({display: 'none'});
 		
 	}
 	else
 	{
-		$(".nav").css({display: 'flex'});
+		// $(".nav").css({display: 'flex'});
 
-		$(".burger.burger-scroll").css({display: 'none'});
+		// $(".burger.burger-scroll").css({display: 'none'});
 	}
 
 });
