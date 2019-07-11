@@ -6,10 +6,11 @@ $(".burger").on('click', function ()
 
 $(window).scroll(function() 
 {
-	if ($(this).scrollTop()>20) 
+	if ($(this).scrollTop()>50) 
 	{
 		// $(".nav").css({display: 'none'});
-		$(".menu").css({display: 'none'});
+	
+
 		
 	}
 	else
