@@ -8,6 +8,24 @@ header
   z-index:5;
 }
 
+.fixed
+{
+  position: fixed;
+  height:20px
+}
+
+.fixed h1
+{
+  font-size:16px;
+}
+
+.fixed .burger
+{
+  font-size:10px;
+  width:22px;
+  height:26px
+}
+
 header nav 
 {
     width:98%;
@@ -21,6 +39,7 @@ header nav
     border-top:none;
     border-bottom-left-radius:5px;
     border-bottom-right-radius:5px;
+    background-color:#fff;
 
 }
 
@@ -84,7 +103,7 @@ header nav .burger
   background-color:#697969;
 }
 
-.menu ul lia
+.menu ul li a
 {
   width:100%;
 }
@@ -92,4 +111,23 @@ header nav .burger
 .display
 {
   display:flex;
+}
+
+.burger-scroll
+{
+  display:none;
+  text-align:right;
+  margin-right:9px;
+  position:fixed;
+  top:0;
+  left:85%;
+  top:1.5%;
+  z-index:400;
+  cursor:pointer;
+  border:1px solid #d0d0d0;
+  width:25px;
+  text-align:center;
+  border-radius:2px;
+  background-color:#fff;
+  
 }

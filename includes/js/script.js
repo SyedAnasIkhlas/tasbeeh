@@ -17,8 +17,23 @@ function reset()
 		setTimeout(function(){
 		  $el.css("background", originalColor);
 		}, x);
+		$("#numbers").val(reset);
 
-		return $("#numbers").val(reset);
+		if ($(".target .value").val() == 0) 
+		{
+			$(".target input").val(0);
+		}
+		else
+		{
+			var value = $(".target .value").val();
+			var newValue = parseInt(value)+num;
+			$("#numbers").val(reset);
+			$(".target input").val(newValue);
+			$(".target").flip('toggle');
+
+		}
+
+		$("#numbers").val(reset);
 	}
 	else
 	{
@@ -43,8 +58,28 @@ function addOne()
 	  $el.css("background", originalColor);
 	}, x);
 
-	return $("#numbers").val(addOne);
+	$("#numbers").val(addOne);
 
+	var target = $(".target .value").val();
+	var targetNum = parseInt(target);
+
+	if (targetNum == 0) 
+	{
+		targetNum = 0;
+	}
+	else
+	{
+		targetNum = targetNum-1;
+		$(".target input").val(targetNum)
+		$("#numbers").val(addOne);
+
+		if (targetNum == 0) 
+		{
+			alert("Target is completed");
+			navigator.vibrate(1000);
+		}
+
+	}
 	
 }
 
@@ -72,7 +107,34 @@ function deduct()
 	  $el.css("background", originalColor);
 	}, x);
 
-	return $("#numbers").val(deduct);
+
+
+	var target = $(".target .value").val();
+	var targetNum = parseInt(target);
+
+	if (targetNum == 0) 
+	{
+		targetNum = 0;
+		$("#numbers").val(deduct);
+	}
+	else
+	{
+		if (num != 0) 
+		{
+			targetNum = targetNum+1;
+			$(".target input").val(targetNum)
+			$("#numbers").val(deduct);
+		}
+		else
+		{
+			$(".target input").val(targetNum)
+			$("#numbers").val(deduct);
+		}
+
+		
+	}
+
+	
 	
 }
 

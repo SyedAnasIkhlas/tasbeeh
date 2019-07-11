@@ -9,19 +9,20 @@
 	<link rel="stylesheet" href="includes/css/header.css">
 	<link rel="shortcut icon" type="image/png" href="includes/icon/tasbeeh.png"/>
 	<link rel="stylesheet" href="includes/css/style.css">
+	<link rel="stylesheet" href="includes/css/target-counter.css">
 	<link rel="stylesheet" href="includes/css/shortcut.css">
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
 	<header>
-		<nav>
+		<nav class="nav">
 			<h1 class="logo">Tasbeeh Counter</h1>
 
 			<div class="burger">&#x2630;</div>
 			
 		</nav>
-
+			<div class="burger burger-scroll">&#x2630;</div>
 		<div class="menu">
 			<ul>
 				<li><a href="index.html" class="noDec white">Home</a></li>
@@ -41,14 +42,16 @@
 
 	<div class="classic-tasbeeh-container">
 
-		<div class="img_read">
-			<div class="image_view">
-				<img id="output"/>
+		<div class="target-container">
+			<span>Set Target</span>
+			<div class="target"> 
+			  <div class="front targer-input"> 
+			    <input type="number" class="value" value="0">
+			  </div> 
+			  <div class="back  targer-input">
+			    <input type="number" value='0'>
+			  </div> 
 			</div>
-			<span class="img_selector">
-				<input id="input" type="file" accept="image/*" onchange="loadFile(event)">	
-			</span>
-			
 		</div><br>
 
 		<div class="classic-tasbeeh-view">
@@ -57,7 +60,7 @@
 			</div>
 			<input type="number" id='numbers' value="0">
 			<div class="classic-tasbeeh ">
-				<div class="circle-holder draggable ">
+				<div class="circle-holder draggable toggle-btn">
 
 					<div class="circle color-1"><span class="shadow"></span></div>
 					<span class="thread"></span>	
@@ -99,9 +102,11 @@
 
 	</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>	
 <script src="includes/js/jquery.ui.touch-punch.min.js"></script>
+<script src="includes/js/target-counter.js"></script>	
 <script src="includes/js/classic.js"></script>	
 <script src="includes/js/script.js"></script>	
 <script src="includes/js/header.js"></script>	

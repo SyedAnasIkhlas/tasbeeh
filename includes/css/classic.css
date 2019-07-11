@@ -17,8 +17,9 @@
 {
     border:1px solid #bfb1b1;
     height:auto;
-    border-radius:5px;
+    border-radius:10px;
     width:260px;
+    background-color:#fbf9f5;
 }
 
 .classic-tasbeeh-view input
