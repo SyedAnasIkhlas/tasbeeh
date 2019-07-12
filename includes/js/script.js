@@ -1,3 +1,30 @@
+jQuery(document).ready(function() 
+{
+
+	const input =  localStorage.getItem('digitalInput');
+	const target = localStorage.getItem('digitalTarget');
+
+	if (input == null) 
+	{
+		$(".tasbeeh input").val(0);
+	}
+	else
+	{
+		$(".tasbeeh input").val(input);
+	}
+
+
+	if (target == null) 
+	{
+		$(".target .digital").val(0);
+	}
+	else
+	{
+		$(".target .digital").val(target);
+	}
+});
+
+
 function reset()
 {
 	var numbers = $("#numbers").val();
@@ -76,11 +103,21 @@ function addOne()
 
 		if (targetNum == 0) 
 		{
-			alert("Target is completed");
 			navigator.vibrate(1000);
+			alert("Target is completed");
 		}
 
 	}
+
+
+	//local storage
+
+		var digitalInput = $(".tasbeeh input").val();
+		var DigitalTargetNum = $(".target .digital").val()
+
+		
+		localStorage.setItem('digitalInput', digitalInput);
+		localStorage.setItem('digitalTarget', DigitalTargetNum);
 	
 }
 

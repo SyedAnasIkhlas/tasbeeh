@@ -1,6 +1,33 @@
+jQuery(document).ready(function() 
+{
+
+	const input =  localStorage.getItem('classicInput');
+	const target = localStorage.getItem('classicTarget');
+
+	if (input == null) 
+	{
+		$(".classic_numbers").val(0);
+	}
+	else
+	{
+		$(".classic_numbers").val(input);
+	}
+
+
+	if (target == null) 
+	{
+		$(".target .classic").val(0);
+	}
+	else
+	{
+		$(".target .classic").val(target);
+	}
+});
+
 $(".draggable").draggable({ axis: 'y', cursor:'pointer', revert:true,
  stop: function()
 {
+
 	var numbers = $("#numbers").val();
 	var num = parseInt(numbers);
 	var addOne = num + 1;
@@ -34,6 +61,16 @@ $(".draggable").draggable({ axis: 'y', cursor:'pointer', revert:true,
 			alert("Target is complete");
 		}
 	}
+	//local storage
+
+		var classicInput = $(".classic-tasbeeh-view input").val();
+		classicInput = parseInt(classicInput)+1;
+		var classicTargetNum = $(".target .classic").val()
+
+		
+		localStorage.setItem('classicInput', classicInput);
+		localStorage.setItem('classicTarget', classicTargetNum);
+
 
 
 	return $("#numbers").val(addOne);
@@ -46,6 +83,27 @@ $(".draggable").draggable({ axis: 'y', cursor:'pointer', revert:true,
 
 
 
+
+
+
+
 // ball goes down another fall from top
 // tree ball with class of in out middle
 // add animation and toggle classes
+// 
+// 	//digital tasbeeh
+		// if (window.location.href.indexOf("index.html") > -1) 
+		// {
+		// 	var digitalInput = $("#numbers").val();
+		// 	var targetNum = $(".target .digital").val()
+		// 	localStorage.setItem('digitalInput', digitalInput);
+		// 	localStorage.setItem('target', targetNum);
+		// }
+		// //classic tasbeeh
+		// if (window.location.href.indexOf("classic.html") > -1) 
+		// {
+		// 	var classicInput = $("#classic_numbers").val();
+		// 	var classicTargetNum = $(".target .classic").val()
+		// 	localStorage.setItem('classicInput', classicInput);
+		// 	localStorage.setItem('classicTarget', classicTargetNum);
+		// }

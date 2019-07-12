@@ -6,18 +6,12 @@ $(".burger").on('click', function ()
 
 $(window).scroll(function() 
 {
-	if ($(this).scrollTop()>50) 
+	if ($(this).scrollTop()>40) 
 	{
-		// $(".nav").css({display: 'none'});
+		$(".menu").removeClass('display');
 	
 
 		
-	}
-	else
-	{
-		// $(".nav").css({display: 'flex'});
-
-		// $(".burger.burger-scroll").css({display: 'none'});
 	}
 
 });

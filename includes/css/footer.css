@@ -1,7 +1,7 @@
 .footer-content
 {
     background:#93a29d;
-    height:20vh;
+    height:auto;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
@@ -16,12 +16,14 @@
 {
     display:flex;
     flex-direction:column;
+    justify-content:space-around;
 }
 
 .footer-content .more
 {
     display:flex;
     flex-direction:column;
+    justify-content:space-around;
 }
 
 footer a
