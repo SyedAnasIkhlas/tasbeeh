@@ -4,25 +4,25 @@
 @font-face
 {
 	font-family: Poppins;
-	src:url(../fonts/Poppins/Poppins-Regular.ttf);
+	src:url(../../fonts/Poppins/Poppins-Regular.ttf);
 }
 
 @font-face
 {
 	font-family: Meddon;
-	src:url(../fonts/Meddon/Meddon.ttf);
+	src:url(../../fonts/Meddon/Meddon.ttf);
 }
 
 @font-face
 {
 	font-family: Short_Stack;
-	src:url(../fonts/Short_Stack/ShortStack-Regular.ttf);
+	src:url(../../fonts/Short_Stack/ShortStack-Regular.ttf);
 }
 
 @font-face
 {
 	font-family: Walter_Turncoat;
-	src:url(../fonts/Walter_Turncoat/WalterTurncoat-Regular.ttf);
+	src:url(../../fonts/Walter_Turncoat/WalterTurncoat-Regular.ttf);
 }
 
 /* custom fonts*/
