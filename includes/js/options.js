@@ -2,6 +2,7 @@
 function options() 
 {
     $(".useful-options").toggleClass("display");
+    $(".arrow").toggleClass("arrow-up");
 
 }
 

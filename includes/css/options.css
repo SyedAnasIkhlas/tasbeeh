@@ -8,11 +8,29 @@ button#options.drake-mode
 
 button#options
 {
+    display:flex;
      margin-top:15px;
     background-color:#484343; 
     color:#ffffff;
     border:none; 
+    justify-content:center;
+    align-items:center;
 }
+
+.arrow
+{
+    margin-left:5px;
+}
+
+.arrow-up
+{
+     display:block;
+    -webkit-transform: rotate(180deg); 
+    -moz-transform: rotate(-180deg); 
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); //For IE support
+}
+
+
 .useful-options
 {
     display:flex;
@@ -155,3 +173,4 @@ footer.drake-mode .footer-content
 {
     background-color:black;
 }
+
