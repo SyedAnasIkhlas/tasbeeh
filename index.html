@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="google-site-verification" content="wsixYMH3ANC2FcNqlvFDrvn521DdrJZol0jEWappcsI" />
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="decription" content="online digital tasbeeh">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<title>Tasbeeh Counter</title>
-	<link rel="shortcut icon" type="image/png" href="includes/icon/tasbeeh.png"/>
+	<link rel="shortcut icon" type="image/png" href="includes/icon/tasbeeh.png" />
 	<link rel="stylesheet" href="includes/css/style.css">
+	<link rel="stylesheet" href="includes/css/options.css">
 	<link rel="stylesheet" href="includes/css/target-counter.css">
 	<link rel="stylesheet" href="includes/css/shortcut.css">
 	<link rel="stylesheet" href="includes/css/header.css">
@@ -17,51 +20,61 @@
 </head>
 
 <header>
-		<nav class="nav">
-			<h1 class="logo"><a href="index.html" class="noDec black bold">Tasbeeh Counter</a></h1>
+	<nav class="nav">
+		<h1 class="logo"><a href="index.html" class="noDec black bold">Tasbeeh Counter</a></h1>
 
-			<div class="burger">&#x2630;</div>
-			
-		</nav>
-			<div class="burger burger-scroll">&#x2630;</div>
-		<div class="menu">
-			<ul>
-				<li><a href="index.html" class="noDec white">Home</a></li>
-				<li><a href="classic.html" class="noDec white">Classic</a></li>
-				<li><a href="index.html" class="noDec white">Digital</a></li>
-				<li><a href="about.html/#contact" class="noDec white">Contact Us</a></li>
-				<li><a href="about.html" class="noDec white">About</a></li>
-				<li><a href="about.html/#contribute" class="noDec white">Contribute</a></li>
-			</ul>
-		</div>
+		<div class="burger">&#x2630;</div>
+
+	</nav>
+	<div class="burger burger-scroll">&#x2630;</div>
+	<div class="menu">
+		<ul>
+			<li><a href="index.html" class="noDec white">Home</a></li>
+			<li><a href="classic.html" class="noDec white">Classic</a></li>
+			<li><a href="index.html" class="noDec white">Digital</a></li>
+			<li><a href="about.html/#contact" class="noDec white">Contact Us</a></li>
+			<li><a href="about.html" class="noDec white">About</a></li>
+			<li><a href="about.html/#contribute" class="noDec white">Contribute</a></li>
+		</ul>
+	</div>
 
 
-	</header>
+</header>
+
 <body>
-	
+
 
 	<section>
 		<main>
 			<div class="main">
+				<button id="options" onclick="options()">Options<span class="arrow"> &#9660;</span></button>
+				<div class="useful-options display">
+					<div class="options">
+						<div class="inline">
+							<span>Dark Theme</span>
+							<input type="checkbox" class="switch">
+						</div>
+					</div>
+				</div>
 				<div class="target-container">
-			<span>Set Target</span>
-			<div class="target"> 
-			  <div class="front targer-input"> 
-			    <input type="number" class="value digital" value="0">
-			  </div> 
-			  <div class="back  targer-input">
-			    <input type="number" value='0'>
-			  </div> 
-			</div>
-		</div><br>
-					
+					<span class='target-msg'>Set Target</span>	
+					<div class="target">
+						<div class="front targer-input">
+							<input type="number" class="value digital" value="0">
+						</div>
+						<div class="back  targer-input">
+							<input type="number" value='0'>
+						</div>
+					</div>
+				</div><br>
+
 
 
 				<div class="tasbeeh">
 					<div class="brand">
 						<span class="brand_name"><b>T</b>asbeeh <b>C</b>ounter</span>
 					</div>
-		
+
 					<div class="total_number">
 						<input type="number" id='numbers' value='0'>
 					</div>
@@ -82,51 +95,51 @@
 				<div class="textarea">
 					<textarea name="read" id="read" cols="35" rows="5" placeholder="Write something"></textarea><br>
 				</div>
-			</div>			
+			</div>
 		</main>
 	</section>
 
 	<section>
 
 		<footer>
-				<div class="footer-content">
-					<div class="mode">
-						<h2>Modes</h2>
-						<a href="classic.html" class="noDec">Classic</a>
-						<a href="index.html" class="noDec">Digital</a>
-					</div>
-
-					<div class="more">
-						<h2>More Links</h2>
-						<a href="about.html/#contact" class="noDec">Contact Us</a>
-						<a href="about.html/#about" class="noDec">About</a>
-						<a href="about.html/#contribute" class="noDec">Contribute</a>
-					</div>
-
-					<div class="map">
-						<h2>Sitemap</h2>
-						<a href="sitemap.xml" class="noDec">sitemap</a>
-					</div>
-					
+			<div class="footer-content">
+				<div class="mode">
+					<h2>Modes</h2>
+					<a href="classic.html" class="noDec">Classic</a>
+					<a href="index.html" class="noDec">Digital</a>
 				</div>
-				
+
+				<div class="more">
+					<h2>More Links</h2>
+					<a href="about.html/#contact" class="noDec">Contact Us</a>
+					<a href="about.html/#about" class="noDec">About</a>
+					<a href="about.html/#contribute" class="noDec">Contribute</a>
+				</div>
+
+				<div class="map">
+					<h2>Sitemap</h2>
+					<a href="sitemap.xml" class="noDec">sitemap</a>
+				</div>
+
+			</div>
+
 		</footer>
 	</section>
 
 
+
+
+	<!--ALL JS SCRIPT-->
+
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 	
+	<script src="includes/js/options.js"></script>
+	<script src="includes/js/target-counter.js"></script>
+	<script src="includes/js/script.js"></script>
+	<script src="includes/js/header.js"></script>
 
-<!--ALL JS SCRIPT-->
-
-
-		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-		<script src="includes/js/jquery.ui.touch-punch.min.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>	
-		<script src="includes/js/target-counter.js"></script>	
-		<script src="includes/js/classic.js"></script>	
-		<script src="includes/js/script.js"></script>	
-		<script src="includes/js/header.js"></script>
-		
 </body>
+
 </html>

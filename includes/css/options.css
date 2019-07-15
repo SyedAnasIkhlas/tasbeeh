@@ -1,0 +1,157 @@
+button#options.drake-mode
+{
+    margin-top:15px;
+    background-color:white; 
+    color:#000000;
+    border:none;  
+}
+
+button#options
+{
+     margin-top:15px;
+    background-color:#484343; 
+    color:#ffffff;
+    border:none; 
+}
+.useful-options
+{
+    display:flex;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-top:5px;
+}
+
+#options
+{
+    width:40%;
+    height:40px;
+    background-color:#eee;
+}
+
+input[type="checkbox"]
+{
+    position:relative;
+    height:20px;
+    width:40px;
+    -webkit-appearance:none;
+    background-color:#fbf9f5;
+    border-radius:20px;
+    box-shadow:inset 0 0 5px #bbb8b8;
+    outline:none;
+}
+
+input:checked[type="checkbox"]
+{
+    background-color:#60d065;
+}
+
+
+
+input[type="checkbox"]::before
+{
+   content:"";
+   position:absolute;
+   width:20px;
+   height:20px;
+   background-color:#dadada;
+   border-radius:50%;
+   top:0;
+   left:0; 
+   box-shadow:0 2px 5px #8a8a8a;
+   transition:0.5s;
+}
+
+input:checked[type="checkbox"]::before
+{
+    left:20px;
+    background-color:#fdfdfd;
+}
+
+.inline 
+{
+    display:flex;
+    align-items:center;
+    width:100%;
+    justify-content:space-evenly;
+}
+
+.inline span
+{
+    font-size:12px;
+    margin-right:20px;
+}
+
+.useful-options.display
+{
+    display:none;
+}
+
+body.drake-mode
+{
+    background-color:#1b1919;
+   color:#fff;
+}
+
+.target.drake-mode input
+{
+    background-color:#000;
+    color:#fff;
+}
+
+.tasbeeh.drake-mode
+{
+    background-color:black;
+}
+
+textarea.drake-mode
+{
+    background-color:#000;
+    color:#fff;
+}
+
+nav.drake-mode.nav
+{
+    background-color:black;
+    
+}
+
+nav.drake-mode.nav a
+{
+    color:#fff;
+}
+footer.drake-mode .footer-content
+{
+    background-color:#000;
+}
+
+.target-msg.drake-mode
+{
+    color:#fff;
+}
+
+.contact.drake-mode form input
+{
+    background-color:black;
+    color:#fff;
+}
+.menu.drake-mode.display ul
+{
+    background-color:#000;
+}
+
+.menu.drake-mode.display ul li
+{
+    background-color:#fff;
+}
+
+.menu.drake-mode.display ul li a
+{
+    color:#000;
+}
+
+.classic-tasbeeh-view.drake-mode
+{
+    background-color:black;
+}

@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<title>Classic</title>
+	<meta name="decription" content="online Classic/traditional tasbeeh">
+	<title>Classic/Traditional Tasbeeh</title>
 	<link rel="stylesheet" href="includes/css/classic.css">
 	<link rel="stylesheet" href="includes/css/header.css">
 	<link rel="stylesheet" href="includes/css/footer.css">
-	<link rel="shortcut icon" type="image/png" href="includes/icon/tasbeeh.png"/>
+	<link rel="shortcut icon" type="image/png" href="includes/icon/tasbeeh.png" />
 	<link rel="stylesheet" href="includes/css/style.css">
 	<link rel="stylesheet" href="includes/css/target-counter.css">
 	<link rel="stylesheet" href="includes/css/shortcut.css">
+	<link rel="stylesheet" href="includes/css/options.css">
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 
-	<header>
-		<nav class="nav">
-			<h1 class="logo"><a href="index.html" class="noDec black bold">Tasbeeh Counter</a></h1>
+<header>
+	<nav class="nav">
+		<h1 class="logo"><a href="index.html" class="noDec black bold">Tasbeeh Counter</a></h1>
 
-			<div class="burger">&#x2630;</div>
-			
-		</nav>
-			<div class="burger burger-scroll">&#x2630;</div>
-		<div class="menu">
-			<ul>
-				<li><a href="index.html" class="noDec white">Home</a></li>
-				<li><a href="classic.html" class="noDec white">Classic</a></li>
-				<li><a href="index.html" class="noDec white">Digital</a></li>
-				<li><a href="contact.html" class="noDec white">Contact Us</a></li>
-				<li><a href="about.html" class="noDec white">About</a></li>
-				<li><a href="contribute.html" class="noDec white">Contribute</a></li>
-			</ul>
-		</div>
+		<div class="burger">&#x2630;</div>
+
+	</nav>
+	<div class="burger burger-scroll">&#x2630;</div>
+	<div class="menu">
+		<ul>
+			<li><a href="index.html" class="noDec white">Home</a></li>
+			<li><a href="classic.html" class="noDec white">Classic</a></li>
+			<li><a href="index.html" class="noDec white">Digital</a></li>
+			<li><a href="about.html/#contact" class="noDec white">Contact Us</a></li>
+			<li><a href="about.html" class="noDec white">About</a></li>
+			<li><a href="about.html/#contribute" class="noDec white">Contribute</a></li>
+		</ul>
+	</div>
 
 
-	</header>
+</header>
 
 
 <body>
 
 	<div class="classic-tasbeeh-container">
-
+		<button id="options" onclick="options()">Options<span class="arrow"> &#9660;</span></button>
+				<div class="useful-options display">
+					<div class="options">
+						<div class="inline">
+							<span>Dark Theme</span>
+							<input type="checkbox" class="switch">
+						</div>
+					</div>
+				</div>
 		<div class="target-container">
-			<span>Set Target</span>
-			<div class="target"> 
-			  <div class="front targer-input"> 
-			    <input type="number" class="value classic" value="0">
-			  </div> 
-			  <div class="back  targer-input">
-			    <input type="number" value='0'>
-			  </div> 
+			<span class='target-msg'>Set Target</span>
+			<div class="target">
+				<div class="front targer-input">
+					<input type="number" class="value classic" value="0">
+				</div>
+				<div class="back  targer-input">
+					<input type="number" value='0'>
+				</div>
 			</div>
 		</div><br>
 
@@ -64,40 +75,40 @@
 				<div class="circle-holder draggable toggle-btn">
 
 					<div class="circle color-1"><span class="shadow"></span></div>
-					<span class="thread"></span>	
+					<span class="thread"></span>
 					<div class="circle color-2"><span class="shadow"></span></div>
 					<span class="thread"></span>
 					<div class="circle color-1"><span class="shadow"></span></div>
-					<span class="thread"></span>	
-					<div class="circle color-2"><span class="shadow"></span></div>
-					<span class="thread"></span>	
-					<div class="circle color-1"><span class="shadow"></span></div>
-					<span class="thread"></span>	
+					<span class="thread"></span>
 					<div class="circle color-2"><span class="shadow"></span></div>
 					<span class="thread"></span>
 					<div class="circle color-1"><span class="shadow"></span></div>
-					<span class="thread"></span>	
+					<span class="thread"></span>
 					<div class="circle color-2"><span class="shadow"></span></div>
 					<span class="thread"></span>
 					<div class="circle color-1"><span class="shadow"></span></div>
-					<span class="thread"></span>	
-					<div class="circle color-2"><span class="shadow"></span></div>
-					<span class="thread"></span>	
-					<div class="circle color-1"><span class="shadow"></span></div>
-					<span class="thread"></span>	
+					<span class="thread"></span>
 					<div class="circle color-2"><span class="shadow"></span></div>
 					<span class="thread"></span>
 					<div class="circle color-1"><span class="shadow"></span></div>
-					<span class="thread"></span>	
+					<span class="thread"></span>
+					<div class="circle color-2"><span class="shadow"></span></div>
+					<span class="thread"></span>
+					<div class="circle color-1"><span class="shadow"></span></div>
+					<span class="thread"></span>
+					<div class="circle color-2"><span class="shadow"></span></div>
+					<span class="thread"></span>
+					<div class="circle color-1"><span class="shadow"></span></div>
+					<span class="thread"></span>
 					<div class="circle color-2"><span class="shadow"></span></div>
 					<span class="thread"></span>
 
 
 				</div>
-				
+
 			</div>
 			<div class="theme">
-				
+
 			</div>
 			<div class="function">
 				<button class="reset_button" onclick="reset()">R</button>
@@ -129,19 +140,20 @@
 				<h2>Sitemap</h2>
 				<a href="sitemap.xml" class="noDec">sitemap</a>
 			</div>
-			
+
 		</div>
-				
-		</footer>
+
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-	<script src="includes/js/jquery.ui.touch-punch.min.js"></script>		
-	<script src="includes/js/target-counter.js"></script>	
-	<script src="includes/js/classic.js"></script>	
-	<script src="includes/js/script.js"></script>	
+	<script src="includes/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="includes/js/target-counter.js"></script>
+	<script src="includes/js/options.js"></script>
+	<script src="includes/js/classic.js"></script>
+	<script src="includes/js/script.js"></script>
 	<script src="includes/js/header.js"></script>
 </body>
-</html>
 
+</html>
