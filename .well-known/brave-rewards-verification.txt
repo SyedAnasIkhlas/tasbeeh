@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: zen-cori-1206de.netlify.com
+Token: 8331cb645f8b7ec2b731042f1e17a4c80b5b1f6e16f186cdbb5b579affd738b3
