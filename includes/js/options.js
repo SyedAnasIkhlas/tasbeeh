@@ -66,6 +66,11 @@ $(document).ready(function()
         }
 
         $(".last-day-message").html(localStorage.getItem("daysRemaining")+daysMessage);
+
+        if (localStorage.getItem("daysRemaining") == null) 
+        {
+        	 $(".last-day-message").html("");
+        }
         
     }
 
