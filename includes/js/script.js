@@ -24,6 +24,25 @@ jQuery(document).ready(function()
 	}
 });
 
+function clickEffect()
+{
+
+	  if ($('.switch.beep-2').prop("checked") == true) 
+    {
+        click = action(3);
+    }
+
+    if ($('.switch.beep').prop("checked") == true) 
+    {
+        click = action(2);
+    }
+
+    if ($('.switch.vibrate').prop("checked") == true) 
+    {
+         click = action(1);
+    }
+    return click;
+}
 
 function reset()
 {
@@ -34,7 +53,7 @@ function reset()
 	 if (confirmReset == true) 
 	 {
 		var reset = num * 0;
-		navigator.vibrate(500);
+		clickEffect();
 
 		var $el = $(".reset_button"),
 	    x = 100,
@@ -74,7 +93,7 @@ function addOne()
 	var numbers = $("#numbers").val();
 	var num = parseInt(numbers);
 	var addOne = num + 1;
-	navigator.vibrate(200);
+	clickEffect();
 
 	var $el = $(".add_button"),
     x = 100,
@@ -134,7 +153,7 @@ function deduct()
 	{
 		var deduct = num - 1;
 	}
-	navigator.vibrate(200);
+	clickEffect();
 
 	var $el = $(".deduct_button"),
     x = 100,

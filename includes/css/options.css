@@ -92,7 +92,10 @@ input:checked[type="checkbox"]::before
     display:flex;
     align-items:center;
     width:100%;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    margin-bottom:5px;
+    border:1px solid;
+    padding:5px;
 }
 
 .inline span
@@ -174,3 +177,23 @@ footer.drake-mode .footer-content
     background-color:black;
 }
 
+.option-title
+{
+    display: :flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+}
+
+button.save-memory
+{
+    margin:0 auto;
+    width:100%;
+    border:1px solid #fff;
+}
+
+.last-day-message
+{
+    margin-top:14px;
+    
+}

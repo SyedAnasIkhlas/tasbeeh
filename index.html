@@ -10,6 +10,7 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<title>Tasbeeh Counter</title>
 	<link rel="shortcut icon" type="image/png" href="includes/icon/tasbeeh.png" />
+	<link rel="stylesheet" href="includes/jquery-ui-1.12.1/jquery-ui.css">
 	<link rel="stylesheet" href="includes/css/style.css">
 	<link rel="stylesheet" href="includes/css/options.css">
 	<link rel="stylesheet" href="includes/css/target-counter.css">
@@ -43,7 +44,11 @@
 </header>
 
 <body>
-
+	
+	<audio class="clickEffect">
+	  <source src="includes/sounds/click.mp3" type="audio/mp3">
+	  Your browser does not support the audio element.
+	</audio>
 
 	<section>
 		<main>
@@ -51,25 +56,54 @@
 				<button id="options" onclick="options()">Options<span class="arrow"> &#9660;</span></button>
 				<div class="useful-options display">
 					<div class="options">
+						<p class="option-title inline noBorder">Theme</p>
 						<div class="inline">
 							<span>Dark Theme</span>
-							<input type="checkbox" class="switch">
+							<input type="checkbox" class="switch dark">
 						</div>
+						
+						<p class="option-title inline noBorder">Click Effect</p>
+						<div class="inline">
+							<span>Vibrate</span>
+							<input type="checkbox" class="switch vibrate">
+						</div>
+
+						<div class="inline">
+							<span>Click</span>
+							<input type="checkbox" class="switch beep">
+						</div>
+
+						<p class="option-title inline noBorder">Starting/End Date</p>
+						<div class="inline">
+							<input type="input" class="start-date" placeholder="Starting Date">
+						</div>
+
+						<div class="inline">
+							<input type="input" class="end-date" placeholder="Ending Date">
+						</div>
+
+						<div class="inline">
+							<input type="number" class="duration" placeholder="Duration">
+						</div>
+						<button class="save-memory button">Remember Dates</button>
 					</div>
 				</div>
+
+				<div class="last-day-message"></div>
+
 				<div class="target-container">
 					<span class='target-msg'>Set Target</span>	
 					<div class="target">
-						<div class="front targer-input">
+						<div class="front  targer-input">
 							<input type="number" class="value digital" value="0">
 						</div>
 						<div class="back  targer-input">
-							<input type="number" value='0'>
+							<input type="number" class="value-2 digital " value='0'>
 						</div>
 					</div>
 				</div><br>
 
-
+				
 
 				<div class="tasbeeh">
 					<div class="brand">
@@ -93,6 +127,9 @@
 					</div>
 
 				</div>
+
+				<div class="last-day-message"></div>
+
 				<div class="textarea">
 					<textarea name="read" id="read" cols="35" rows="5" placeholder="Write something"></textarea><br>
 				</div>
@@ -134,8 +171,10 @@
 
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	 <script src="includes/jquery-ui-1.12.1/jquery-ui.js"></script>
 	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 	
+	<script src="includes/js/vibrate.js"></script>
 	<script src="includes/js/options.js"></script>
 	<script src="includes/js/target-counter.js"></script>
 	<script src="includes/js/script.js"></script>

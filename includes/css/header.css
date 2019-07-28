@@ -136,3 +136,16 @@ header nav .burger
   background-color:#fff;
   
 }
+.burger
+{
+
+}
+
+.buger-stick
+{
+  width:10px;
+  height:10px;
+  background-color: #fff;
+  margin:5px;
+
+}

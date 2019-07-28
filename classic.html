@@ -10,6 +10,7 @@
 	<meta name="decription" content="online Classic/traditional tasbeeh">
 	<title>Classic/Traditional Tasbeeh</title>
 	<link rel="stylesheet" href="includes/css/classic.css">
+	<link rel="stylesheet" href="includes/jquery-ui-1.12.1/jquery-ui.css">
 	<link rel="stylesheet" href="includes/css/header.css">
 	<link rel="stylesheet" href="includes/css/footer.css">
 	<link rel="shortcut icon" type="image/png" href="includes/icon/tasbeeh.png" />
@@ -45,17 +46,50 @@
 
 
 <body>
+	<audio class="clickEffect">
+	  <source src="includes/sounds/click.mp3" type="audio/mp3">
+	  Your browser does not support the audio element.
+	</audio>
 
 	<div class="classic-tasbeeh-container">
 		<button id="options" onclick="options()">Options<span class="arrow"> &#9660;</span></button>
 				<div class="useful-options display">
 					<div class="options">
+						<p class="option-title inline noBorder">Theme</p>
 						<div class="inline">
 							<span>Dark Theme</span>
-							<input type="checkbox" class="switch">
+							<input type="checkbox" class="switch dark">
 						</div>
+						
+						<p class="option-title inline noBorder">Click Effect</p>
+						<div class="inline">
+							<span>Vibrate</span>
+							<input type="checkbox" class="switch vibrate">
+						</div>
+
+						<div class="inline">
+							<span>Click</span>
+							<input type="checkbox" class="switch beep">
+						</div>
+
+						<p class="option-title inline noBorder">Starting/End Date</p>
+						<div class="inline">
+							<input type="input" class="start-date" placeholder="Starting Date">
+						</div>
+
+						<div class="inline">
+							<input type="input" class="end-date" placeholder="Ending Date">
+						</div>
+
+						<div class="inline">
+							<input type="number" class="duration" placeholder="Duration">
+						</div>
+						<button class="save-memory button">Remember Dates</button>
 					</div>
 				</div>
+
+				<div class="last-day-message"></div>
+
 		<div class="target-container">
 			<span class='target-msg'>Set Target</span>
 			<div class="target">
@@ -117,6 +151,9 @@
 				<button class="deduct_button" onclick="deduct()">-1</button>
 			</div>
 		</div>
+
+		<div class="last-day-message"></div>
+
 		<div class="textarea">
 			<textarea name="read" id="read" cols="35" rows="5" placeholder="Write something"></textarea><br>
 		</div>
@@ -152,6 +189,8 @@
 	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 	<script src="includes/js/jquery.ui.touch-punch.min.js"></script>
 	<script src="includes/js/target-counter.js"></script>
+	
+	<script src="includes/js/vibrate.js"></script>
 	<script src="includes/js/options.js"></script>
 	<script src="includes/js/classic.js"></script>
 	<script src="includes/js/script.js"></script>

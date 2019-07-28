@@ -31,7 +31,7 @@ $(".draggable").draggable({ axis: 'y', cursor:'pointer', revert:true,
 	var numbers = $("#numbers").val();
 	var num = parseInt(numbers);
 	var addOne = num + 1;
-	navigator.vibrate(200);
+	clickEffect();
 
 	var $el = $(".add_button"),
     x = 100,
