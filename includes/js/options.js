@@ -50,9 +50,9 @@ $(document).ready(function()
     }
 
      //Days Remaining
-    if (localStorage.getItem("daysRemaining") == "") 
+    if (localStorage.getItem("daysRemaining") == NaN) 
     {
-        //Nothing
+        $(".last-day-message").html("");
     }
     else
     {
@@ -66,6 +66,8 @@ $(document).ready(function()
         }
 
         $(".last-day-message").html(localStorage.getItem("daysRemaining")+daysMessage);
+
+
 
         if (localStorage.getItem("daysRemaining") == null) 
         {
@@ -261,6 +263,8 @@ $(document).ready(function()
                 
             });
 
+          
+
              $(".save-memory").on('click', function() 
               {
 
@@ -277,30 +281,64 @@ $(document).ready(function()
 
                 const daysRemaining = timeDifference / (milliSecondInOneSecond*secondInOneHour*hoursInOneDay);
 
+
+
                 if (daysRemaining < 1 ) 
                 {
                     alert("Can't save this duration");
                     daysRemaining = "";
                     
                 }
-                // 
-                // localstorage
+				else if ($( ".end-date" ).val() == "") 
+				{
+					alert("Ending date is required");
+				}
+				else
+				{
+				  // localstorage
                   localStorage.setItem('start-date',$(".start-date").val());
                   localStorage.setItem('end-date',$( ".end-date" ).val());
                   localStorage.setItem('duration',$(".duration").val());
                   localStorage.setItem('daysRemaining',daysRemaining );
-                  // if ($(".end-date").val() == currentDate) 
-                  // {
-                  //   $(".last-day-message").val(lastDayMessage);
-                  //     localStorage.removeItem('start-date');
-                  //     localStorage.removeItem('start-date');
-                  //     localStorage.removeItem('duration');
-                  // }
                   alert('Saved');
+                  if (daysRemaining > 1) 
+                  {
+                  	daysMessage = " days remaining"
+                  }
+                  else
+                  {
+                  	daysMessage = " day remaining"
+              	  }
+
+                  $(".last-day-message").html(daysRemaining + daysMessage);
+				}
+                  
               });
+
+             $(".delete-memory").on('click', function() 
+	          {
+	          	const confirmEraseMemory= confirm("Press 'Ok' if you want delete saved dates");
+	          	if (confirmEraseMemory == true) 
+	          	{
+	          	  localStorage.removeItem('start-date');
+                  localStorage.removeItem('end-date');
+                  localStorage.removeItem('duration');
+                  localStorage.removeItem('daysRemaining');
+                  alert('Deleted');
+                  $(".last-day-message").html("");
+	          	}
+	          	else
+	          	{
+	          		//Do Nothing
+	          	}	
+	          	  
+
+	          });
 
            
           });
+
+
 
 
 

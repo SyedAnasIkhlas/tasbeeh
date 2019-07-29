@@ -190,6 +190,18 @@ button.save-memory
     margin:0 auto;
     width:100%;
     border:1px solid #fff;
+    color:#ffffff;
+    background-color:#02b502;
+}
+
+button.delete-memory
+{
+    margin:0 auto;
+    width:100%;
+    border:1px solid #fff;
+    margin-top:5px;
+    background-color:#9e0707;
+    color:#ffffff;
 }
 
 .last-day-message
