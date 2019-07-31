@@ -20,7 +20,7 @@ $(document).ready(function()
     }
     else
     {
-        $(".start-date").val(localStorage.getItem("start-date"))
+        $(".start").html(localStorage.getItem("start-date"))
     }
 
     if (localStorage.getItem("end-date") == "") 
@@ -30,7 +30,7 @@ $(document).ready(function()
     }
     else
     {
-        $(".end-date").val(localStorage.getItem("start-date"))
+        $(".end").html(localStorage.getItem("end-date"));
     }
 
 
@@ -56,16 +56,28 @@ $(document).ready(function()
     }
     else
     {
-        if (localStorage.getItem("daysRemaining") == 1) 
-        {
-            daysMessage = " day remaining";
-        }
-        else
-        {
-            daysMessage = " days remaining";
-        }
+            const date1 = new Date(localStorage.getItem("start-date"));
+            const date2= new Date(localStorage.getItem("end-date"));
+            const timeDifference = date2.getTime() - date1.getTime();
+            
+            
+            //Get days differece
+            const milliSecondInOneSecond = 1000;
+            const secondInOneHour = 3600;
+            const hoursInOneDay = 24;
 
-        $(".last-day-message").html(localStorage.getItem("daysRemaining")+daysMessage);
+            const days = timeDifference / (milliSecondInOneSecond*secondInOneHour*hoursInOneDay);
+
+            if (days == 1) 
+            {
+                daysMessage = " day remaining";
+            }
+            else
+            {
+                daysMessage = " days remaining";
+            }
+            const daysRemaining = 
+            $(".last-day-message").html(days+daysMessage);
 
 
 
@@ -269,11 +281,11 @@ $(document).ready(function()
               {
 
                 //one day remaining
-                 const date1 = new Date(currentDate);
+                const date1 = new Date($( ".start-date" ).val());
                 const date2= new Date($( ".end-date" ).val());
                 const timeDifference = date2.getTime() - date1.getTime();
                 
-
+                
                 //Get days differece
                 const milliSecondInOneSecond = 1000;
                 const secondInOneHour = 3600;
@@ -293,6 +305,10 @@ $(document).ready(function()
 				{
 					alert("Ending date is required");
 				}
+                else if($(".duration").val()== "")
+                {
+                    alert("Duration is required");
+                }
 				else
 				{
 				  // localstorage
@@ -312,6 +328,9 @@ $(document).ready(function()
 
                   $(".last-day-message").html(daysRemaining + daysMessage);
 				}
+
+                $(".end").html($( ".end-date" ).val());
+                $(".start").html($( ".start-date" ).val());
                   
               });
 
@@ -326,6 +345,9 @@ $(document).ready(function()
                   localStorage.removeItem('daysRemaining');
                   alert('Deleted');
                   $(".last-day-message").html("");
+                  $(".end").html("");
+                  $(".start").html("");
+
 	          	}
 	          	else
 	          	{
@@ -334,6 +356,33 @@ $(document).ready(function()
 	          	  
 
 	          });
+
+             $('.duration').keyup(function() 
+             {
+               
+               const duration =  parseInt($('.duration').val())
+
+
+                if ($('.duration').val() == "") 
+                {
+                    $('.end-date').val("");
+                }
+                else if ($('.duration').val() == 0) 
+                {
+                    $('.end-date').val("");
+                }
+                else
+                {
+                     var myDate = $(".start-date").datepicker('getDate'); // Retrieve selected date
+                    myDate.setDate(myDate.getDate() + duration); // Add 7 days
+
+                    $('.end-date').val($.datepicker.formatDate('yy-mm-dd', myDate)); // Reformat
+                    // alert(myDate)
+                }
+
+               
+               
+             });
 
            
           });
