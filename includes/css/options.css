@@ -209,3 +209,11 @@ button.delete-memory
     margin-top:14px;
     
 }
+.center
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+

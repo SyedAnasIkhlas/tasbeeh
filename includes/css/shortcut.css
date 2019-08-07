@@ -27,7 +27,11 @@
 
 /* custom fonts*/
 
-
+/*//hidden*/
+.hidden
+{
+	display: none;
+}
 
 /*Border*/
 .border{
