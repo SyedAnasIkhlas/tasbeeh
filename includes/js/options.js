@@ -1,5 +1,5 @@
 const date_1 = $( ".start-date" ).val();
-const date_2= $( ".end-date" ).val();
+const date_2 = $( ".end-date" ).val();
 const lastDayMessage = "Today is the last day"; 
 const currentDate = $.datepicker.formatDate('yy-mm-dd', new Date());
 
@@ -28,64 +28,101 @@ function dateDifference(date_1,date_2)
 
 }
 
+//clear stored dates
+function clearDateLocalStorage()
+{
+    localStorage.removeItem('start-date');
+    localStorage.removeItem('end-date');
+    localStorage.removeItem('duration');
+    localStorage.removeItem('daysRemaining');
+    $( ".end-date" ).val("");
+    $( ".duration" ).val("");
+
+}
+
+function AddNewDateLocalStorage()
+{
+    localStorage.setItem('start-date',$(".start-date").val());
+    localStorage.setItem('end-date',$( ".end-date" ).val());
+    localStorage.setItem('duration',$(".duration").val());
+    localStorage.setItem('daysRemaining',daysRemaining );
+   
+
+}
+
 
 $(document).ready(function()
-{
-   
+{ 
     //dates
     if (localStorage.getItem("start-date") != "") 
     {
         $(".start").html(localStorage.getItem("start-date"))
     }
-
-    if (localStorage.getItem("end-date") != "") 
-    {
-        $(".end").html(localStorage.getItem("end-date"));
-    }
-
-
-    if (localStorage.getItem("duration") != "") 
+     if (localStorage.getItem("duration") != "") 
     {
         $(".duration").val(localStorage.getItem("duration"))
     }
 
-    //last day
-    if (localStorage.getItem("end-date") == currentDate) 
+    if (localStorage.getItem("end-date") != "") 
     {
-        $(".last-day-message").html(lastDayMessage);
-    }
-
-    //Matching ending date with current date
-    if (localStorage.getItem("end-date") == currentDate) 
-    {
-        $(".last-day-message").html(lastDayMessage);
-    }
-
-     const days = dateDifference(currentDate, localStorage.getItem("end-date"));
-     //Days Remaining
-    if (localStorage.getItem("duration") == "") 
-    {
-        $(".last-day-message").html("");
-    }
-    else
-    {
-        // const days = parseInt(localStorage.getItem("duration")) -  parseInt(days );
-            if (days == 1) 
-            {
-                daysMessage = " day remaining";
-            }
-            else
-            {
-                daysMessage = " days remaining";
-            }
-
-            const daysRemaining = $(".last-day-message").html(days+daysMessage);
-            // alert(daysMessage+days+localStorage.getItem("duration")+days)
-
-        if (localStorage.getItem("daysRemaining") == null) 
+        $(".end").html(localStorage.getItem("end-date"));
+    
+        //if end date is not empty, do this
+         const days = dateDifference(currentDate, localStorage.getItem("end-date"));
+         //Deleting local storage after target is completed
+        if (days == -1) 
         {
-        	 $(".last-day-message").html("");
+            clearDateLocalStorage();
+            
+            $(".last-day-message").html("");
         }
+
+        //last day
+        if (days  < 1 ) 
+        {
+            $(".last-day-message").html("");
+            $(".last-day-message").html(lastDayMessage);
+        }
+
+         //Days Remaining
+        if (localStorage.getItem("duration") == "") 
+        {
+            $(".last-day-message").html("");
+        }
+        else
+        {
+            // const days = parseInt(localStorage.getItem("duration")) -  parseInt(days );
+                if (days == 1) 
+                {
+                    daysMessage = " day remaining";
+                }
+                else
+                {
+                    daysMessage = " days remaining";
+                }
+
+  
+
+                if (days == 0) 
+                {
+                    $(".last-day-message").html(lastDayMessage);
+                }
+                else
+                {
+                    $(".last-day-message").html(days+daysMessage);
+                }
+
+                
+                // alert(daysMessage+days+localStorage.getItem("duration")+days)
+                
+
+
+                if (localStorage.getItem("daysRemaining") == null) 
+                {
+                	 $(".last-day-message").html("");
+                }
+
+    }
         
     }
 
@@ -189,7 +226,7 @@ $(document).ready(function()
             }
         });
 
-
+        //Dates functions
           $( function()
           {
             $( ".start-date" ).datepicker();
@@ -214,11 +251,12 @@ $(document).ready(function()
             $(".end-date").change(function() 
             {
                 
-                dateDifference(date_1,date_2)
+                const dayDiff = dateDifference($( ".start-date" ).val(),$( ".end-date" ).val())
+                // alert($( ".end-date" ).val())
 
                 if (dayDiff < 1) 
                 {
-                    $('.duration').val(0);
+                    $('.duration').val("");
                 } 
                 else
                 {
@@ -272,10 +310,7 @@ $(document).ready(function()
 				{
                   const durationData = $(".duration").val();
 				  // localstorage
-                  localStorage.setItem('start-date',$(".start-date").val());
-                  localStorage.setItem('end-date',$( ".end-date" ).val());
-                  localStorage.setItem('duration',$(".duration").val());
-                  localStorage.setItem('daysRemaining',daysRemaining );
+                  AddNewDateLocalStorage();
                   alert('Saved');
                   if (durationData > 1) 
                   {
@@ -283,7 +318,7 @@ $(document).ready(function()
                   }
                   else
                   {
-                  	daysMessage = " day remaining"
+                  	daysMessage = " day remaining";
               	  }
 
                   $(".last-day-message").html(durationData + daysMessage);
@@ -299,10 +334,7 @@ $(document).ready(function()
 	          	const confirmEraseMemory= confirm("Press 'Ok' if you want delete saved dates");
 	          	if (confirmEraseMemory == true) 
 	          	{
-	          	  localStorage.removeItem('start-date');
-                  localStorage.removeItem('end-date');
-                  localStorage.removeItem('duration');
-                  localStorage.removeItem('daysRemaining');
+                  clearDateLocalStorage();
                   alert('Deleted');
                   $(".last-day-message").html("");
                   $(".end").html("");
