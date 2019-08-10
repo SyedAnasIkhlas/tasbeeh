@@ -4,12 +4,21 @@
     height:auto;
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
-    width:80%;
+    justify-content:space-evenly;
+    width:94%;
     margin:0 auto;
-    padding:20px;
+    padding:5px 0;
     border-top-left-radius:5px;
     border-top-right-radius:5px;
+}
+
+.footer-content h2
+{
+    font-size:18px;
+    margin-top:5px;
+    border-bottom:1px solid;
+    text-align:center;
+    margin-bottom:5px;
 }
 
 .footer-content .mode
@@ -28,8 +37,10 @@
 
 footer a
 {
+    text-align:start;
     color:#fff;
     font-size:14px;
+    margin-left:8px;
 }
 
 footer a:hover
