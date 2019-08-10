@@ -22,6 +22,9 @@ jQuery(document).ready(function()
 	{
 		$(".target .digital").val(target);
 	}
+
+	$(".digitalDescription").val(localStorage.getItem("digitalDescription"));
+	$(".classicDescription").val(localStorage.getItem("classicDescription"));
 });
 
 function clickEffect()
@@ -194,6 +197,31 @@ function deduct()
 
 	
 	
+}
+$("digitalDescription").keyup(function() 
+{
+	saveDigitalDescription();
+});
+
+$("classicDescription").keyup(function() 
+{
+	saveClassicDescription();
+});
+
+function saveDigitalDescription()
+{
+	localStorage.setItem('digitalDescription',$("digitalDescription").val());
+}
+
+function saveClassicDescription()
+{
+	localStorage.setItem('classicDescription',$("classicDescription").val());
+}
+
+function getDescription()
+{
+	localStorage.getItem('digitalDescription');
+	localStorage.getItem('classicDescription');
 }
 
 

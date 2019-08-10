@@ -47,6 +47,10 @@ button#options
     height:40px;
     background-color:#eee;
 }
+input
+{
+    width: 100%;
+}
 
 input[type="checkbox"]
 {
@@ -185,7 +189,7 @@ footer.drake-mode .footer-content
     margin:0 auto;
 }
 
-button.save-memory
+button.option-green
 {
     margin:0 auto;
     width:100%;
@@ -194,7 +198,7 @@ button.save-memory
     background-color:#02b502;
 }
 
-button.delete-memory
+button.option-red
 {
     margin:0 auto;
     width:100%;
@@ -217,3 +221,14 @@ button.delete-memory
     align-items:center;
 }
 
+.brand-name
+{
+    font-family:'Varela Round', sans-serif;
+    font-weight: bold;
+}
+
+.custom-brand-font
+{
+    font-family:'Varela Round', sans-serif;
+    font-weight: bold;
+}
