@@ -70,7 +70,9 @@ $(document).ready(function()
     
         //if end date is not empty, do this
          const days = dateDifference(currentDate, localStorage.getItem("end-date"));
-         //Deleting local storage after target is completed        if (days == -1) 
+         //Deleting local storage after target is completed      
+           
+        if (days == -1) 
         {
             clearDateLocalStorage();
             
