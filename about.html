@@ -46,47 +46,55 @@
 
 	<div class="center">
 		<button id="options" onclick="options()">Options<span class="arrow"> &#9660;</span></button>
-		<div class="useful-options display">
-			<div class="options">
-				<p class="option-title inline noBorder">Theme</p>
-				<div class="inline">
-					<span>Dark Theme</span>
-					<input type="checkbox" class="switch dark">
+			<div class="useful-options display">
+				<div class="options">
+					<p class="option-title inline noBorder">Theme</p>
+					<div class="inline options-container">
+						<span>Dark Theme</span>
+						<input type="checkbox" class="switch dark">
+					</div>
+
+					<div class="inline options-container">
+						<span>Blue Theme</span>
+						<input type="checkbox" class="switch blue">
+					</div>
+					
+					<p class="option-title inline noBorder">Click Effect</p>
+					<div class="inline options-container">
+						<span>Vibrate</span>
+						<input type="checkbox" class="switch vibrate">
+					</div>
+
+					<div class="inline options-container">
+						<span>Click</span>
+						<input type="checkbox" class="switch beep">
+					</div>
+
+					<p class="option-title inline noBorder">Starting/End Date</p>
+					<div class="inline options-container">
+						<input type="input" class="start-date" placeholder="Starting Date">
+					</div>
+					<div class="inline options-container">
+						<div class="start"></div>
+					</div>
+
+					<div class="inline options-container">
+						<input type="input" class="end-date" placeholder="Ending Date">
+					</div>
+					<div class="inline options-container">
+						<div class="end"></div>
+					</div>
+
+					<div class="inline options-container">
+						<input type="number" class="duration" placeholder="Duration">
+					</div>
+					<button class="option-green save-memory button">Remember Dates</button>
+					<button class="option-red delete-memory button">Delete Dates</button>
+					
 				</div>
+
 				
-				<p class="option-title inline noBorder">Click Effect</p>
-				<div class="inline">
-					<span>Vibrate</span>
-					<input type="checkbox" class="switch vibrate">
-				</div>
-
-				<div class="inline">
-					<span>Click</span>
-					<input type="checkbox" class="switch beep">
-				</div>
-
-				<p class="option-title inline noBorder">Starting/End Date</p>
-				<div class="inline">
-					<input type="input" class="start-date" placeholder="Starting Date">
-				</div>
-				<div class="inline">
-					<div class="start"></div>
-				</div>
-
-				<div class="inline">
-					<input type="input" class="end-date" placeholder="Ending Date">
-				</div>
-				<div class="inline">
-					<div class="end"></div>
-				</div>
-
-				<div class="inline">
-					<input type="number" class="duration" placeholder="Duration">
-				</div>
-				<button class="option-green save-memory button">Remember Dates</button>
-				<button class="option-red delete-memory button">Delete Dates</button>
 			</div>
-		</div>
 
 		<div class="last-day-message hidden"></div>
 	</div>
@@ -109,7 +117,7 @@
 		<form method="POST" netlify>
 			<input type="text" name="name" placeholder="Name">
 			<input type="email" name="email" placeholder="Email">
-			<textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+			<textarea name="message" cols="30" rows="10" placeholder="Message" class="contact-textarea"></textarea>
 			<input type="submit" value="Send Message" class="button btn-green">
 		</form>
 	</div>
@@ -180,6 +188,7 @@
 	<script src="includes/js/classic.js"></script>
 	<script src="includes/js/script.js"></script>
 	<script src="includes/js/header.js"></script>
+	<script src="includes/js/theme.js"></script>
 		
 </body>
 </html>

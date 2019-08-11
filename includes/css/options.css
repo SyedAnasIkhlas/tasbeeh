@@ -1,4 +1,4 @@
-button#options.drake-mode
+button#options.dark-mode
 {
     margin-top:15px;
     background-color:white; 
@@ -113,80 +113,96 @@ input:checked[type="checkbox"]::before
     display:none;
 }
 
-body.drake-mode
+body.dark-mode
 {
     background-color:#1b1919;
    color:#fff;
 }
 
-.target.drake-mode input
+.target.dark-mode input
 {
     background-color:#000;
     color:#fff;
 }
 
-.tasbeeh.drake-mode
+.tasbeeh.dark-mode
 {
     background-color:black;
 }
 
-textarea.drake-mode
+textarea.dark-mode
 {
     background-color:#000;
     color:#fff;
 }
 
-nav.drake-mode.nav
+nav.dark-mode.nav
 {
     background-color:black;
     
 }
 
-nav.drake-mode.nav a
+nav.dark-mode.nav a
 {
     color:#fff;
 }
-footer.drake-mode .footer-content
+footer.dark-mode .footer-content
 {
     background-color:#000;
 }
 
-.target-msg.drake-mode
+.target-msg.dark-mode
 {
     color:#fff;
 }
 
-.contact.drake-mode form input
+.contact.dark-mode form input
 {
     background-color:black;
     color:#fff;
 }
-.menu.drake-mode.display ul
+.menu.dark-mode.display ul
 {
     background-color:#000;
 }
 
-.menu.drake-mode.display ul li
+.menu.dark-mode.display ul li
 {
     background-color:#fff;
 }
 
-.menu.drake-mode.display ul li a
+.menu.dark-mode.display ul li a
 {
     color:#000;
 }
 
-.classic-tasbeeh-view.drake-mode
+.classic-tasbeeh-view.dark-mode
 {
     background-color:black;
 }
 
+input.dark-mode
+{
+    background-color: #fff;
+    color:#000;
+}
+
 .option-title
 {
-    display: :flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     margin:0 auto;
+    background-color:#000;
+    color:#fff;
+    font-weight:bold;
+}
+
+.option-title.dark-mode
+{
+    background-color:#fff;
+    color:#000;
+    font-weight:bold;
 }
 
 button.option-green
@@ -232,3 +248,124 @@ button.option-red
     font-family:'Varela Round', sans-serif;
     font-weight: bold;
 }
+
+/*Blue Theme*/
+button#options.blue-mode
+{
+    margin-top:15px;
+    background-color:white; 
+    color:#5aa5af;
+    border:none;  
+}
+
+
+body.blue-mode
+{
+    background-color:#6dcad6;
+   color:#000;
+   font-weight:bold;
+}
+
+.target.blue-mode input
+{
+    background-color:#ffffff;
+    color:#5aa5af;
+}
+
+.tasbeeh.blue-mode
+{
+    background-color:#ffffff;
+    color:#000;
+}
+
+.tasbeeh.blue-mode input
+{
+    color:#fff;
+    background-color:#000;
+}
+
+textarea.blue-mode
+{
+    background-color:#ffffff;
+    color:#000;
+    font-weight:bold;
+}
+
+nav.blue-mode.nav
+{
+    background-color:#ffffff;
+    color:#5aa5af;
+
+    
+}
+
+nav.blue-mode.nav a
+{
+    color:#5aa5af;
+}
+
+footer.blue-mode .footer-content
+{
+    background-color:#5aa5af;
+    color:#fff;
+}
+
+footer.blue-mode .footer-content a
+{
+    color:#fff;
+}
+
+.target-msg.blue-mode
+{
+    color:#000;
+}
+
+.contact.blue-mode form input
+{
+    background-color:#ffffff;
+    color:#000000;
+}
+.menu.blue-mode.display ul
+{
+    background-color:#6dcad6;
+}
+
+.menu.blue-mode.display ul li
+{
+    background-color:#fff;
+}
+
+.menu.blue-mode.display ul li a
+{
+    color:#4477c3;
+}
+
+.classic-tasbeeh-view.blue-mode
+{
+    color:#000;
+    background-color:#fff;
+}
+
+.classic-tasbeeh-view.blue-mode input
+{
+    color:#fff;
+    background-color:#000;
+}
+
+input.blue-mode
+{
+    background-color: #fff;
+    color:#000;
+}
+
+.inline.options-container.blue-mode
+{
+    background-color:#fff;
+}
+
+.inline.options-container.blue-mode input
+{
+    border:1px solid #000;
+}
+
+

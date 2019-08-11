@@ -141,92 +141,73 @@ $(document).ready(function()
     $( '.switch.beep' ).prop( "checked", false );
    }
 
-	if (localStorage.getItem("dark") != null) 
-	{
-		$( '.switch.dark' ).prop( "checked", true );
-		$("body").addClass('drake-mode');
-        $(".tasbeeh").addClass('drake-mode');
-        $(".target").addClass('drake-mode');
-        $("textarea").addClass('drake-mode');
-		$(".nav").addClass('drake-mode');
-        $("footer").addClass('drake-mode');
-        $(".target-msg").addClass('drake-mode');
-        $(".contact").addClass('drake-mode');
-        $("#options").addClass('drake-mode');
-        $(".menu").addClass('drake-mode');
-        $(".classic-tasbeeh-view").addClass('drake-mode');
-	}
+   //themes
 
-        $('.switch.dark').click(function()
+     currentTheme()
+
+    $('.switch.dark').click(function()
+    {
+        if($(this).prop("checked") == true)
         {
-            if($(this).prop("checked") == true)
-            {
-                localStorage.setItem("dark","1")
-                $("body").addClass('drake-mode');
-                $(".tasbeeh").addClass('drake-mode');
-                $(".target").addClass('drake-mode');
-                $("textarea").addClass('drake-mode');
-				$(".nav").addClass('drake-mode');
-                $("footer").addClass('drake-mode');
-                $(".target-msg").addClass('drake-mode');
-                $(".contact").addClass('drake-mode');
-                $("#options").addClass('drake-mode');
-                $(".menu").addClass('drake-mode');
-                $(".classic-tasbeeh-view").addClass('drake-mode');
-
-            }
-            else if($(this).prop("checked") == false)
-            {
-                localStorage.removeItem("dark")
-                $("body").removeClass('drake-mode');
-                $(".tasbeeh").removeClass('drake-mode');
-                $(".target").removeClass('drake-mode');
-                $("textarea").removeClass('drake-mode');
-				$(".nav").removeClass('drake-mode');
-                $("footer").removeClass('drake-mode');
-                $(".target-msg").removeClass('drake-mode');
-                $(".contact").removeClass('drake-mode');
-                $("#options").removeClass('drake-mode');
-                $(".menu").removeClass('drake-mode');
-                $(".classic-tasbeeh-view").removeClass('drake-mode');
-            }
-        });
-
-
-
-        $('.switch.vibrate').on('change',function()
+            $(".switch.blue").prop( "checked", false)
+            disableTheme("blue");
+            enableTheme("dark");
+        }
+        else if($(this).prop("checked") == false)
         {
-            if($(this).prop("checked") == true)
-            {
-                $('.switch.beep').prop( "checked", false );
-                localStorage.setItem("vibrate","1");
-                localStorage.removeItem("beep");          
-            }
-            else
-            {
-                $('.switch.beep').prop( "checked", true );
-                $('.switch.vibrate').prop( "checked", false );
-                localStorage.removeItem("vibrate");
-                localStorage.setItem("beep","1");      
-            }
-        });
+            disableTheme("dark");
+        }
+    });
 
-        $('.switch.beep').on('change',function()
+    $('.switch.blue').click(function()
+    {
+        if($(this).prop("checked") == true)
         {
-            if($(this).prop("checked") == false)
-            {
-                $('.switch.beep').prop( "checked", false );
-                localStorage.setItem("vibrate","1");
-                localStorage.removeItem("beep");  
-            }
-            else
-            {
-                $('.switch.beep').prop( "checked", true );
-                $('.switch.vibrate').prop( "checked", false );
-                localStorage.removeItem("vibrate");
-                localStorage.setItem("beep","1");     
-            }
-        });
+            $(".switch.dark").prop( "checked", false)
+            disableTheme("dark");
+            enableTheme("blue");
+        }
+        else if($(this).prop("checked") == false)
+        {
+            disableTheme("blue");
+        }
+    });
+
+    //click sound/effect
+
+    $('.switch.vibrate').on('change',function()
+    {
+        if($(this).prop("checked") == true)
+        {
+            $('.switch.beep').prop( "checked", false );
+            localStorage.setItem("vibrate","1");
+            localStorage.removeItem("beep");          
+        }
+        else
+        {
+            $('.switch.beep').prop( "checked", true );
+            $('.switch.vibrate').prop( "checked", false );
+            localStorage.removeItem("vibrate");
+            localStorage.setItem("beep","1");      
+        }
+    });
+
+    $('.switch.beep').on('change',function()
+    {
+        if($(this).prop("checked") == false)
+        {
+            $('.switch.beep').prop( "checked", false );
+            localStorage.setItem("vibrate","1");
+            localStorage.removeItem("beep");  
+        }
+        else
+        {
+            $('.switch.beep').prop( "checked", true );
+            $('.switch.vibrate').prop( "checked", false );
+            localStorage.removeItem("vibrate");
+            localStorage.setItem("beep","1");     
+        }
+    });
 
         //Dates functions
           $( function()

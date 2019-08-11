@@ -56,51 +56,58 @@
 				<div class="useful-options display">
 					<div class="options">
 						<p class="option-title inline noBorder">Theme</p>
-						<div class="inline">
+						<div class="inline options-container">
 							<span>Dark Theme</span>
 							<input type="checkbox" class="switch dark">
 						</div>
+
+						<div class="inline options-container">
+							<span>Blue Theme</span>
+							<input type="checkbox" class="switch blue">
+						</div>
 						
 						<p class="option-title inline noBorder">Click Effect</p>
-						<div class="inline">
+						<div class="inline options-container">
 							<span>Vibrate</span>
 							<input type="checkbox" class="switch vibrate">
 						</div>
 
-						<div class="inline">
+						<div class="inline options-container">
 							<span>Click</span>
 							<input type="checkbox" class="switch beep">
 						</div>
 
 						<p class="option-title inline noBorder">Starting/End Date</p>
-						<div class="inline">
+						<div class="inline options-container">
 							<input type="input" class="start-date" placeholder="Starting Date">
 						</div>
-						<div class="inline">
+						<div class="inline options-container">
 							<div class="start"></div>
 						</div>
 
-						<div class="inline">
+						<div class="inline options-container">
 							<input type="input" class="end-date" placeholder="Ending Date">
 						</div>
-						<div class="inline">
+						<div class="inline options-container">
 							<div class="end"></div>
 						</div>
 
-						<div class="inline">
+						<div class="inline options-container">
 							<input type="number" class="duration" placeholder="Duration">
 						</div>
 						<button class="option-green save-memory button">Remember Dates</button>
 						<button class="option-red delete-memory button">Delete Dates</button>
 
 						<p class="option-title inline noBorder">Change Tasbeeh Name</p>
-						<div class="inline">
-							<input type="text" class="brand-name" placeholder="Tasbeeh Counter">
+						<div class="inline options-container">
+							<input type="text" class="brand-name" placeholder="Tasbeeh Counter" 
+							maxlength="17">
 						</div>
 						<button class="option-green save-name button">Save</button>
 						<button class="option-red reset-name button">Reset</button>
-						
 					</div>
+
+					
 				</div>
 
 				<div class="last-day-message"></div>
@@ -227,6 +234,7 @@
 	<script src="includes/js/classic.js"></script>
 	<script src="includes/js/script.js"></script>
 	<script src="includes/js/header.js"></script>
+	<script src="includes/js/theme.js"></script>
 </body>
 
 </html>

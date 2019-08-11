@@ -6,7 +6,7 @@ $(".burger").on('click', function ()
 
 $(window).scroll(function() 
 {
-	if ($(this).scrollTop()>40) 
+	if ($(this).scrollTop()>10) 
 	{
 		$(".menu").removeClass('display');
 	
