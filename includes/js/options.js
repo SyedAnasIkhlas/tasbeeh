@@ -1,3 +1,5 @@
+currentAdsStatus()
+
 const date_1 = $( ".start-date" ).val();
 const date_2 = $( ".end-date" ).val();
 const lastDayMessage = "Today is the last day"; 
@@ -370,12 +372,21 @@ $(document).ready(function()
         {
             resetBrandName()
         });
-
-
-
-
-
+        
           
+           $('.switch.ad-blocker').click(function()
+            {
+                if($(this).prop("checked") == true)
+                {
+                     localStorageAddItem("ads");
+                     hideAds()
+                }
+                else if($(this).prop("checked") == false)
+                {
+                    localStorageRemoveItem("ads"); 
+                    dislayAds();
+                }
+            });
 
      });
 

@@ -46,55 +46,70 @@
 
 	<div class="center">
 		<button id="options" onclick="options()">Options<span class="arrow"> &#9660;</span></button>
-			<div class="useful-options display">
-				<div class="options">
-					<p class="option-title inline noBorder">Theme</p>
-					<div class="inline options-container">
-						<span>Dark Theme</span>
-						<input type="checkbox" class="switch dark">
-					</div>
+				<div class="useful-options display">
+					<div class="options">
 
-					<div class="inline options-container">
-						<span>Blue Theme</span>
-						<input type="checkbox" class="switch blue">
-					</div>
-					
-					<p class="option-title inline noBorder">Click Effect</p>
-					<div class="inline options-container">
-						<span>Vibrate</span>
-						<input type="checkbox" class="switch vibrate">
-					</div>
+						<!-- Ads blocker -->
+						<p class="option-title inline noBorder">Ad Blocker</p>
+						<div class="section-seprate">
+							<div class="inline options-container">
+								<span>Enable</span>
+								<input type="checkbox" class="switch ad-blocker">
+							</div>
+						</div>
 
-					<div class="inline options-container">
-						<span>Click</span>
-						<input type="checkbox" class="switch beep">
-					</div>
+						<!-- themes -->
+						<p class="option-title inline noBorder">Theme</p>
+						<div class="section-seprate">
+							<div class="inline options-container">
+								<span>Dark Theme</span>
+								<input type="checkbox" class="switch dark">
+							</div>
 
-					<p class="option-title inline noBorder">Starting/End Date</p>
-					<div class="inline options-container">
-						<input type="input" class="start-date" placeholder="Starting Date">
-					</div>
-					<div class="inline options-container">
-						<div class="start"></div>
-					</div>
+							<div class="inline options-container">
+								<span>Blue Theme</span>
+								<input type="checkbox" class="switch blue">
+							</div>
+						</div>
 
-					<div class="inline options-container">
-						<input type="input" class="end-date" placeholder="Ending Date">
-					</div>
-					<div class="inline options-container">
-						<div class="end"></div>
-					</div>
+						<!-- click effects -->
+						<p class="option-title inline noBorder">Click Effect</p>
+						<div class="section-seprate">
+							<div class="inline options-container">
+								<span>Vibrate</span>
+								<input type="checkbox" class="switch vibrate">
+							</div>
 
-					<div class="inline options-container">
-						<input type="number" class="duration" placeholder="Duration">
-					</div>
-					<button class="option-green save-memory button">Remember Dates</button>
-					<button class="option-red delete-memory button">Delete Dates</button>
-					
+							<div class="inline options-container">
+								<span>Click</span>
+								<input type="checkbox" class="switch beep">
+							</div>
+						</div>
+						
+						<!-- remember dates -->
+						<p class="option-title inline noBorder">Starting/End Date</p>
+						<div class="section-seprate">
+							<div class="inline options-container">
+								<input type="input" class="start-date" placeholder="Starting Date">
+							</div>
+							<div class="inline options-container">
+								<div class="start"><!-- Starting Date --></div>
+							</div>
+
+							<div class="inline options-container">
+								<input type="input" class="end-date" placeholder="Ending Date">
+							</div>
+							<div class="inline options-container">
+								<div class="end"><!-- Ending Date --></div>
+							</div>
+
+							<div class="inline options-container">
+								<input type="number" class="duration" placeholder="Duration">
+							</div>
+							<button class="option-green save-memory button">Remember Dates</button>
+							<button class="option-red delete-memory button">Delete Dates</button>
+						</div>
 				</div>
-
-				
-			</div>
 
 		<div class="last-day-message hidden"></div>
 	</div>
@@ -170,7 +185,8 @@
 		</footer>
 	</section>
 
-
+<!--  Ads  -->
+<div class="ads"></div>
 	
 
 <!--ALL JS SCRIPT-->
@@ -183,6 +199,9 @@
 	<script src="includes/js/target-counter.js"></script>
 	
 	<script src="includes/js/vibrate.js"></script>
+	<script src="includes/js/switch.js"></script>
+	<script src="includes/js/ad-blocker.js"></script>	
+	<script src="includes/js/local-storage.js"></script>
 	<script src="includes/js/tasbeeh-name.js"></script>
 	<script src="includes/js/options.js"></script>
 	<script src="includes/js/classic.js"></script>

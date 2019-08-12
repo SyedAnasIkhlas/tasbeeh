@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<meta name="decription" content="online Classic/traditional tasbeeh">
-	<title>Classic/Traditional Tasbeeh</title>
+	<title>Traditional/Classic Tasbeeh</title>
 	<link rel="stylesheet" href="includes/css/classic.css">
 	<link rel="stylesheet" href="includes/jquery-ui-1.12.1/jquery-ui.css">
 	<link rel="stylesheet" href="includes/css/header.css">
@@ -53,9 +53,21 @@
 
 	<div class="classic-tasbeeh-container">
 		<button id="options" onclick="options()">Options<span class="arrow"> &#9660;</span></button>
-				<div class="useful-options display">
-					<div class="options">
-						<p class="option-title inline noBorder">Theme</p>
+			<div class="useful-options display">
+				<div class="options">
+
+					<!-- Ads blocker -->
+					<p class="option-title inline noBorder">Ad Blocker</p>
+					<div class="section-seprate">
+						<div class="inline options-container">
+							<span>Enable</span>
+							<input type="checkbox" class="switch ad-blocker">
+						</div>
+					</div>
+
+					<!-- themes -->
+					<p class="option-title inline noBorder">Theme</p>
+					<div class="section-seprate">
 						<div class="inline options-container">
 							<span>Dark Theme</span>
 							<input type="checkbox" class="switch dark">
@@ -65,8 +77,11 @@
 							<span>Blue Theme</span>
 							<input type="checkbox" class="switch blue">
 						</div>
-						
-						<p class="option-title inline noBorder">Click Effect</p>
+					</div>
+
+					<!-- click effects -->
+					<p class="option-title inline noBorder">Click Effect</p>
+					<div class="section-seprate">
 						<div class="inline options-container">
 							<span>Vibrate</span>
 							<input type="checkbox" class="switch vibrate">
@@ -76,20 +91,23 @@
 							<span>Click</span>
 							<input type="checkbox" class="switch beep">
 						</div>
-
-						<p class="option-title inline noBorder">Starting/End Date</p>
+					</div>
+					
+					<!-- remember dates -->
+					<p class="option-title inline noBorder">Starting/End Date</p>
+					<div class="section-seprate">
 						<div class="inline options-container">
 							<input type="input" class="start-date" placeholder="Starting Date">
 						</div>
 						<div class="inline options-container">
-							<div class="start"></div>
+							<div class="start"><!-- Starting Date --></div>
 						</div>
 
 						<div class="inline options-container">
 							<input type="input" class="end-date" placeholder="Ending Date">
 						</div>
 						<div class="inline options-container">
-							<div class="end"></div>
+							<div class="end"><!-- Ending Date --></div>
 						</div>
 
 						<div class="inline options-container">
@@ -97,8 +115,11 @@
 						</div>
 						<button class="option-green save-memory button">Remember Dates</button>
 						<button class="option-red delete-memory button">Delete Dates</button>
-
-						<p class="option-title inline noBorder">Change Tasbeeh Name</p>
+					</div>
+					
+					<!-- Change tasbeeh name -->
+					<p class="option-title inline noBorder">Change Tasbeeh Name</p>
+					<div class="section-seprate">
 						<div class="inline options-container">
 							<input type="text" class="brand-name" placeholder="Tasbeeh Counter" 
 							maxlength="17">
@@ -106,9 +127,10 @@
 						<button class="option-green save-name button">Save</button>
 						<button class="option-red reset-name button">Reset</button>
 					</div>
-
-					
 				</div>
+
+				
+			</div>
 
 				<div class="last-day-message"></div>
 
@@ -220,6 +242,9 @@
 
 			</div>
 
+<!--  Ads  -->
+<div class="ads"></div>
+
 		</footer>
 
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -227,7 +252,10 @@
 	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 	<script src="includes/js/jquery.ui.touch-punch.min.js"></script>
 	<script src="includes/js/target-counter.js"></script>
-	
+
+	<script src="includes/js/switch.js"></script>
+	<script src="includes/js/ad-blocker.js"></script>	
+	<script src="includes/js/local-storage.js"></script>
 	<script src="includes/js/vibrate.js"></script>
 	<script src="includes/js/tasbeeh-name.js"></script>
 	<script src="includes/js/options.js"></script>
@@ -235,8 +263,7 @@
 	<script src="includes/js/script.js"></script>
 	<script src="includes/js/header.js"></script>
 	<script src="includes/js/theme.js"></script>
-	<script>(function(d){let s=d.createElement('script');s.async=true;s.src='https://nativesubscribe.pro/code/native.js?h=waWQiOjEwMTUwMjQsInNpZCI6MTAyMDEzMCwid2lkIjozMTY2Niwic3JjIjoyfQ==eyJ';d.head.appendChild(s);})(document);</script>
-	<script>(function(d){let s=d.createElement('script');s.async=true;s.src='https://olineman.pro/code/pops.js?h=waWQiOjEwMTUwMjQsInNpZCI6MTAyMDEzMCwid2lkIjozMTY2OCwic3JjIjoyfQ==eyJ';d.head.appendChild(s);})(document);</script>
+	
 </body>
 
 </html>

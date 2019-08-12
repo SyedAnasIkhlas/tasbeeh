@@ -60,10 +60,35 @@ function disableTheme(theme)
 
 function currentTheme()
 {
-	theme = localStorage.getItem("currentTheme")
-	if (theme) 
+	const current_theme = localStorageGetItem("currentTheme")
+	if (current_theme) 
 	{
-		addClassToHtmlElements(theme);
-		$( '.switch.'+theme ).prop( "checked", true );
+		addClassToHtmlElements(current_theme);
+		$( '.switch.'+current_theme ).prop( "checked", true );
 	}
+    else
+    {
+      // addClassToHtmlElements(theme);
+        $( '.switch.'+current_theme ).prop( "checked", false );  
+    }
+}
+
+function customThemes()
+{
+    $("body").css({});
+    $(".tasbeeh").css({});
+    $(".target").css({});
+    $("textarea").css({});
+    $(".nav").css({});
+    $("footer").css({});
+    $(".target-msg").css({});
+    $(".contact").css({});
+    $("#options").css({});
+    $(".menu").css({});
+    $(".contact-textarea").css({});
+    $("input").css({});
+    $(".classic-tasbeeh-view").css({});
+    $(".inline.options-container").css({});
+    $(".inline.options-container").css({});
+
 }

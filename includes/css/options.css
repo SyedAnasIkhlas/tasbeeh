@@ -108,6 +108,15 @@ input:checked[type="checkbox"]::before
     margin-right:20px;
 }
 
+.section-seprate
+{
+    border:1px solid;
+    padding:5px 5px 2px 5px;
+    background-color:#fff;
+    color:#000;
+    font-weight:bold;
+}
+
 .useful-options.display
 {
     display:none;
@@ -181,6 +190,14 @@ footer.dark-mode .footer-content
     background-color:black;
 }
 
+.section-seprate input.dark-mode
+{
+    color:#000;
+    border:none;
+    border:1px solid #000;
+    outline:none;
+}
+
 input.dark-mode
 {
     background-color: #fff;
@@ -196,6 +213,8 @@ input.dark-mode
     background-color:#000;
     color:#fff;
     font-weight:bold;
+    margin-top:5px;
+
 }
 
 .option-title.dark-mode
