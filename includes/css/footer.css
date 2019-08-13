@@ -2,7 +2,6 @@
 {
     background:#292626;
     color:#fff;
-    height:auto;
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
@@ -10,6 +9,7 @@
     padding:5px 0;
     border-top-left-radius:2px;
     border-top-right-radius:2px;
+    margin-bottom:0px;
 }
 
 .footer-content h2

@@ -183,8 +183,8 @@ body
 
 .add_button
 {
-	height:60px;
-	width:60px;
+	height:90px;
+	width:90px;
 	border:none;
 	border-radius:50%;
 	border:1px solid #6b6666;
@@ -203,8 +203,8 @@ body
 .deduct_button
 {
 
-	width:20px;
-	height:20px;
+	width:30px;
+	height:30px;
 	border-radius:50%;
 	border:none;
 	border:1px solid #585252;
