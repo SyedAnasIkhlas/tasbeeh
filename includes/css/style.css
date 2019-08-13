@@ -4,6 +4,11 @@
 	padding: 0px;
 	font-family: 'Varela Round', sans-serif;
 }
+.upper-heading
+{
+	font-weight:bolder;
+	font-size:17px;
+}
 
 body
 {
@@ -85,6 +90,23 @@ body
 	background-color:#fbf9f5;
 	border-radius:20px;
 	border:1px solid #bfb1b1;
+
+}
+
+.tasbeeh.kids
+{
+	border-top-left-radius:20%;
+	border-top-right-radius:20%;
+	border-bottom-left-radius:60%;
+	border-bottom-right-radius:60%;
+	justify-content:space-around
+}
+
+.tasbeeh.kids div.deduct
+{
+	justify-content:center;
+	align-items:center;
+	height:50px;
 }
 
 .brand

@@ -1,0 +1,14 @@
+.propaller-ads-banner
+{
+	display:flex;
+	justify-content:center;
+	width:80%;
+	height:10%;
+	align-items:center;
+}
+
+.propaller-ads-banner iframe
+{
+	width:100%;
+	height:120px;
+}

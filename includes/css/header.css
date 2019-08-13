@@ -94,6 +94,7 @@ header nav .burger
   height:40px;
   border-bottom:1px solid;
   display:flex;
+   border-bottom:1px solid #ddd;
   
 
 }
