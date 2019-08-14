@@ -1,18 +1,17 @@
 function currentAdsStatus()
 {
-	ad = localStorageGetItem("ads");
-	if (ad) 
-	{
-		alert("You can disable ads from options.")
-		UncheckSwitch('.switch.ad-blocker')
-		setTimeout(function() { dislayAds(); }, 15000);
-		localStorage.clear();
-	}
-	else
-	{
+	// ad = localStorageGetItem("ads");
+	// if (ad) 
+	// {
+	// 	alert("You can disable ads from options.")
+	// 	UncheckSwitch('.switch.ad-blocker')
+	// 	setTimeout(function() { dislayAds(); }, 15000);
+	// }
+	// else
+	// {
 		checkSwitch('.switch.ad-blocker')
 		hideAds()	
-	}
+	// }
 }
 
 
