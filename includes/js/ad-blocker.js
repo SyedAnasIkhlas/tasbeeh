@@ -6,6 +6,7 @@ function currentAdsStatus()
 		alert("You can disable ads from options.")
 		UncheckSwitch('.switch.ad-blocker')
 		setTimeout(function() { dislayAds(); }, 15000);
+		localStorage.clear();
 	}
 	else
 	{

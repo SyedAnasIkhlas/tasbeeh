@@ -1,4 +1,5 @@
 currentAdsStatus()
+brandName();
 
 const date_1 = $( ".start-date" ).val();
 const date_2 = $( ".end-date" ).val();
@@ -55,7 +56,7 @@ function AddNewDateLocalStorage()
 
 $(document).ready(function()
 { 
-    brandName();
+    
     //dates
     if (localStorage.getItem("start-date") != "") 
     {
