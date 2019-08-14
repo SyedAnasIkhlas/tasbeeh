@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-	<!-- Meta Tags -->
+<html>	
+<head>	
+		<!-- Meta Tags -->
 	<meta name="google-site-verification" content="wsixYMH3ANC2FcNqlvFDrvn521DdrJZol0jEWappcsI" />
 	<meta name="keywords" content="tasbeeh, real tasbeeh, online, easy, tally, quran, allah, Tasbeh, tasbih, digital tasbeeh,  تَـسْـبِـيْـح  , islam" />
 	<meta charset="utf-8">
@@ -23,6 +22,7 @@
 	<link rel="stylesheet" href="includes/css/header.css">
 	<link rel="stylesheet" href="includes/css/footer.css">
 	<link rel="stylesheet" href="includes/css/settings.css">
+	
 
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
@@ -30,45 +30,45 @@
 
 	<!-- ads-css -->
 	<link rel="stylesheet" href="includes/css/ads.css">
-
-</head>
-
-<header>
-	<nav class="nav">
-		<h1 class="logo"><a href="index.html" class="noDec black bold">Tasbeeh Counter</a><sup class="upper-heading red bold " title='Beta Version, Under Development'> Beta</sup></h1>
-
-		<div class="burger">&#x2630;</div>
-
-	</nav>
-	<div class="burger burger-scroll">&#x2630;</div>
-	<div class="menu">
-		<ul>
-			<li><a href="index.html" class="noDec white">Home</a></li>
-			<li><a href="classic.html" class="noDec white">Traditional</a></li>
-			<li><a href="index.html" class="noDec white">Digital</a></li>
-			<li><a href="about.html/#contact" class="noDec white">Contact Us</a></li>
-			<li><a href="about.html" class="noDec white">About</a></li>
-			<li><a href="about.html/#contribute" class="noDec white">Contribute</a></li>
-			<li><a href="kids.html" class="noDec white">Kids Mode</a></li>
-		</ul>
-	</div>
-
-
-</header>
-
+</head>	
 <body>
-	
+	<!-- header -->
+	<header>
+		<nav class="nav">
+			<h1 class="logo"><a href="index.html" class="noDec black bold">Tasbeeh Counter</a><sup class="upper-heading red bold " title='Beta Version, Under Development'> Beta</sup></h1>
+
+			<div class="burger">&#x2630;</div>
+
+		</nav>
+		<div class="burger burger-scroll">&#x2630;</div>
+		<div class="menu">
+			<ul>
+				<li><a href="index.html" class="noDec white">Home</a></li>
+				<li><a href="classic.html" class="noDec white">Traditional</a></li>
+				<li><a href="index.html" class="noDec white">Digital</a></li>
+				<li><a href="about.html/#contact" class="noDec white">Contact Us</a></li>
+				<li><a href="about.html" class="noDec white">About</a></li>
+				<li><a href="about.html/#contribute" class="noDec white">Contribute</a></li>
+				<li><a href="kids.html" class="noDec white">Kids Mode</a></li>
+			</ul>
+		</div>
+
+
+	</header>
+
+	<!-- Click Audio -->
 	<audio class="clickEffect">
 	  <source src="includes/sounds/click.mp3" type="audio/mp3">
 	  Your browser does not support the audio element.
 	</audio>
 
 	<section>
-		<main>
-
-
-<!-- Content area -->
-			<div class="setting-container">
+		<div class="main">
+		
+			<div class="last-day-message"></div>
+			
+			<!-- Content -->
+				<div class="setting-container">
 			<!-- Ads blocker -->
 				<p class="option-title inline noBorder">Ad Blocker</p>
 				<div class="section-seprate">
@@ -91,6 +91,7 @@
 						<input type="checkbox" class="switch blue">
 					</div>
 
+
 					<div class="inline options-container more-settings-options">
 						<button id="options" onclick="options()">Custom Theme<span class="arrow"> &#9660;</span></button>
 						<div class="useful-options settings-options display">
@@ -98,7 +99,7 @@
 
 								<div class="inline options-container options-container-settings">
 									<span>Background Color</span>
-									<input type="text" class="jscolor" value="" placeholder="click to chose color">
+									<input type="text" class="jscolor body" value="" placeholder="click to chose color">
 								</div>
 
 								<div class="inline options-container options-container-settings">
@@ -144,6 +145,7 @@
 							</div>
 						</div>
 					</div>
+				</div>
 
 				<!-- click effects -->
 				<p class="option-title inline noBorder">Click Effect</p>
@@ -195,13 +197,17 @@
 					
 				</div>
 		</div>
-			
 
-<!-- content ends here -->
-			
-		</main>
+			<!-- Content -->
+
+		<div class="last-day-message"></div>
+
+		<span class="ads banner"></span>	
+	<!-- main div ends here -->
+		</div>
 	</section>
 
+	<!-- Footer section -->
 	<section>
 
 		<!-- <div class="ad">http://deloplen.com/afu.php?zoneid=2767119</div> -->
@@ -211,6 +217,7 @@
 				<div class="footer-left">
 					<div class="mode footer-section">
 						<h2>Modes</h2>
+						<a href="kids.html" class="noDec">Kids Mode</a>
 						<a href="classic.html" class="noDec">Traditional</a>
 						<a href="index.html" class="noDec">Digital</a>
 					</div>
@@ -246,6 +253,7 @@
 
 		</footer>
 	</section>
+	
 
 	<!--  Ads  -->
 	<div class="ads"></div>
@@ -256,10 +264,11 @@
 
 	<!-- CDN's -->
 	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-	 <script src="includes/jquery-ui-1.12.1/jquery-ui.js"></script>
+	<script src="includes/jquery-ui-1.12.1/jquery-ui.js"></script>
 	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 	
 	<!-- Local Scripts -->
+	<script src="includes/js/jscolor.js"></script>
 	<script src="includes/js/vibrate.js"></script>
 	<script src="includes/js/tasbeeh-name.js"></script>
 	<script src="includes/js/theme.js"></script>
@@ -271,16 +280,11 @@
 	<script src="includes/js/script.js"></script>
 	<script src="includes/js/header.js"></script>
 
-	<!-- Color picker -->
-	<script src="includes/js/jscolor.js"></script>
-
-
 	<!-- propaller ads  code-->
-	<script type="text/javascript" src="//deloplen.com/apu.php?zoneid=2767109" async data-cfasync="false"></script>
+	
 
 	<!-- admaven ads -->
-	<script data-cfasync="false" src="//dgw7ae5vrovs7.cloudfront.net/?eawgd=801282"></script>
-    
-</body>
-
+	<div class="ad adScr"></div>	
+	
+</body>	
 </html>

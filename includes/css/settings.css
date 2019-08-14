@@ -1,13 +1,34 @@
 .setting-container
 {
     padding:20px 50px;
+    width:100%;
 }
 
 .more-settings-options
 {
     display:flex;
     flex-direction:column;
+    width:100%;
     
+}
+
+.more-settings-options #options
+{
+    width:100%;
+    background-color:#484343;
+    
+}
+
+.more-settings-options #options.dark-mode
+{
+    background-color:#484343;
+    color:#fff;
+}
+
+.more-settings-options #options.blue-mode
+{
+    background-color:#484343;
+    color:#fff;
 }
 .options-container-settings
 {
@@ -21,7 +42,13 @@
 
 .options-container-settings input
 {
-    width:50%
+    width:50%;
+    border:1px solid #000;
+}
+
+.options-container-settings input::placeholder
+{
+    font-size:10px;
 }
 
 

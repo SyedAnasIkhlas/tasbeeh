@@ -73,22 +73,7 @@ function currentTheme()
     }
 }
 
-function customThemes()
+function customThemes(className , bgColor)
 {
-    $("body").css({});
-    $(".tasbeeh").css({});
-    $(".target").css({});
-    $("textarea").css({});
-    $(".nav").css({});
-    $("footer").css({});
-    $(".target-msg").css({});
-    $(".contact").css({});
-    $("#options").css({});
-    $(".menu").css({});
-    $(".contact-textarea").css({});
-    $("input").css({});
-    $(".classic-tasbeeh-view").css({});
-    $(".inline.options-container").css({});
-    $(".inline.options-container").css({});
-
+    $(className).css({backgroundColor:bgColor});
 }

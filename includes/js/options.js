@@ -378,16 +378,24 @@ $(document).ready(function()
             {
                 if($(this).prop("checked") == true)
                 {
-                     localStorageAddItem("ads");
-                     hideAds()
+                    localStorageRemoveItem("ads"); 
+                    hideAds()
                 }
                 else if($(this).prop("checked") == false)
                 {
-                    localStorageRemoveItem("ads"); 
+                    localStorageAddItem("ads");
                     dislayAds();
                 }
             });
 
      });
 
+
+ $('.body').keyup(function() 
+ {
+    bgColor = $('.body').val();
+    property = "backgroundColor";
+    className = "body";
+     customThemes("body", bgColor)
+ });
 	
