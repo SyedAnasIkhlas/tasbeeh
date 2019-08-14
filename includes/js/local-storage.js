@@ -12,3 +12,8 @@ function localStorageGetItem(item)
 {
 	return localStorage.getItem(item);
 }
+
+function clearLocalStorage()
+{
+	localStorage.clear();
+}
