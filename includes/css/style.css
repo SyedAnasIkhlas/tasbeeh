@@ -308,6 +308,39 @@ body
 	background-color:#00c6a1;
 }
 
+
+.main.policy
+{
+	display:flex;
+	justify-content:center'
+	align-items:center;
+	text-align:center;
+	margin-bottom:30%;
+
+	
+}
+
+.main.policy h3
+{
+	font-size:25px;
+	margin-top:140px;
+	border:1px solid;
+	padding:9px;
+	margin-bottom:2px;
+	border-radius:12px;
+}
+
+.main.policy  span.c-s
+{
+	font-size: 13px;
+	border:1px solid;
+	padding:2px;
+	border-top:none;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	
+}
+
 @media screen and (max-width:700px)
 {
 	.tasbeeh
