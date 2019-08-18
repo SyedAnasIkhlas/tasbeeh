@@ -6,10 +6,12 @@
     flex-direction:row;
     justify-content:space-evenly;
     margin:0 auto;
-    padding:5px 0;
+    padding:20px  0;
     border-top-left-radius:2px;
     border-top-right-radius:2px;
     margin-bottom:0px;
+    padding-bottom:20px;
+    height:100%;
 }
 
 .footer-content h2

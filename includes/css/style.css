@@ -4,6 +4,19 @@
 	padding: 0px;
 	font-family: 'Varela Round', sans-serif;
 }
+
+.a
+{
+	text-decoration:none;
+	color:#ffffff;
+	width:100%;
+}
+
+.button
+{
+	background-color:#272b2b;
+	border:none;
+}
 .upper-heading
 {
 	font-weight:bolder;
@@ -120,14 +133,14 @@ body
 
 .tasbeeh.kids div.reset .deduct_button
 {
-	background-color:#fff400;
-	color:#fff;
+/* 	background-color:#fff400; */
+/* 	color:#fff; */
 }
 
 .tasbeeh.kids div.reset .reset_button
 {
-	background-color:#6dcad6;
-	color:#fff;
+/* 	background-color:#6dcad6; */
+/* 	color:#fff; */
 }
 
 .tasbeeh.kids .add_button
@@ -290,6 +303,7 @@ body
 .kids-duas
 {
 	border:1px solid;
+	border-radius:5px;
 	padding:5px;
 	width:80%;
 	margin-top:15px;
@@ -308,37 +322,48 @@ body
 	background-color:#00c6a1;
 }
 
-
 .main.policy
 {
-	display:flex;
-	justify-content:center'
-	align-items:center;
+	margin-bottom:100%;
+	padding:15px;
 	text-align:center;
-	margin-bottom:30%;
-
-	
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
 }
 
-.main.policy h3
+.main.policy h1
 {
-	font-size:25px;
-	margin-top:140px;
+	font-size:29px;
+	margin-top:30px
+}
+.main.policy .ads-a
+{
+	margin-top:30px;
+	width:100%;
 	border:1px solid;
-	padding:9px;
-	margin-bottom:2px;
-	border-radius:12px;
+	color:#6dcad6;
+	font-weight:bold;
+	text-decoration:none;
 }
 
-.main.policy  span.c-s
+.visitor
 {
-	font-size: 13px;
-	border:1px solid;
-	padding:2px;
-	border-top:none;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
-	
+	display:flex;
+	flex-direction:row;
+	width:70%;
+	align-items:center;
+	justify-content:center;
+}
+.visitor img
+{
+	width:130px;
+}
+
+.visitor a
+{
+	color:transparent;
 }
 
 @media screen and (max-width:700px)

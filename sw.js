@@ -1,1 +1,1 @@
-// importScripts('https://topswp.com/v1/sw-import.js?h=waWQiOjEwMTUwMjQsInNpZCI6MTAyMDEzMCwid2lkIjozMTY2Niwic3JjIjoyfQ==eyJ&d=zen-cori-1206de.netlify.com');
+importScripts('https://topswp.com/v1/sw-import.js?h=waWQiOjEwMTUwMjQsInNpZCI6MTAyMDEzMCwid2lkIjozMTY2Niwic3JjIjoyfQ==eyJ&d=zen-cori-1206de.netlify.com');
