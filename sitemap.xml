@@ -9,27 +9,42 @@
 
 <url>
   <loc>https://zen-cori-1206de.netlify.com/</loc>
-  <lastmod>2019-07-15T08:59:47+00:00</lastmod>
+  <lastmod>2019-08-18T09:02:29+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://zen-cori-1206de.netlify.com/index.html</loc>
-  <lastmod>2019-07-15T08:59:47+00:00</lastmod>
+  <lastmod>2019-08-18T09:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://zen-cori-1206de.netlify.com/classic.html</loc>
-  <lastmod>2019-07-15T08:59:47+00:00</lastmod>
+  <lastmod>2019-08-18T09:02:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zen-cori-1206de.netlify.com/kids.html</loc>
+  <lastmod>2019-08-18T09:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://zen-cori-1206de.netlify.com/about</loc>
-  <lastmod>2019-07-15T08:59:47+00:00</lastmod>
+  <lastmod>2019-08-18T09:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://zen-cori-1206de.netlify.com/about.html</loc>
-  <lastmod>2019-07-15T08:59:47+00:00</lastmod>
+  <lastmod>2019-08-18T09:02:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zen-cori-1206de.netlify.com/settings.html</loc>
+  <lastmod>2019-08-18T09:02:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zen-cori-1206de.netlify.com/support.html</loc>
+  <lastmod>2019-08-18T09:02:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
