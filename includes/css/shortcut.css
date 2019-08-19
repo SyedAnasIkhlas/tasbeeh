@@ -820,7 +820,6 @@ textarea
 	align-items:center;
 	width:140px;
 	height:40px;
-	border:1px solid #00BCD4;
 	border-radius:2px;	
 	font-size: 16px;
 }
@@ -860,6 +859,19 @@ textarea
 	color:white;
 }
 
+.btn-black
+{
+	background-color: #000;
+	color:#fff;
+	border:1px solid;
+
+}
+
+.btn-width-100
+{
+	width:100%;
+}
+
 
 /*buttons end here*/
 
@@ -868,7 +880,7 @@ textarea
 .message-red
 {
 	font-size: 12px;
-	color: red;
+	color:red;
 }
 
 .message-green

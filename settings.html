@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>	
-<head>	
-		<!-- Meta Tags -->
+<html>
+
+<head>
+	<!-- Meta Tags -->
 	<meta name="google-site-verification" content="wsixYMH3ANC2FcNqlvFDrvn521DdrJZol0jEWappcsI" />
-	<meta name="keywords" content="tasbeeh, real tasbeeh, online, easy, tally, quran, allah, Tasbeh, tasbih, digital tasbeeh,  تَـسْـبِـيْـح  , islam" />
+	<meta name="keywords"
+		content="tasbeeh, real tasbeeh, online, easy, tally, quran, allah, Tasbeh, tasbih, digital tasbeeh,  تَـسْـبِـيْـح  , islam" />
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="decription" content="online digital tasbeeh">
@@ -22,7 +24,7 @@
 	<link rel="stylesheet" href="includes/css/header.css">
 	<link rel="stylesheet" href="includes/css/footer.css">
 	<link rel="stylesheet" href="includes/css/settings.css">
-	
+
 
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
@@ -30,12 +32,14 @@
 
 	<!-- ads-css -->
 	<link rel="stylesheet" href="includes/css/ads.css">
-</head>	
+</head>
+
 <body>
 	<!-- header -->
 	<header>
 		<nav class="nav">
-			<h1 class="logo"><a href="index.html" class="noDec black bold">Tasbeeh Counter</a><sup class="upper-heading red bold " title='Beta Version, Under Development'> Beta</sup></h1>
+			<h1 class="logo"><a href="index.html" class="noDec black bold">Tasbeeh Counter</a><sup
+					class="upper-heading red bold " title='Beta Version, Under Development'> Beta</sup></h1>
 
 			<div class="burger">&#x2630;</div>
 
@@ -58,18 +62,18 @@
 
 	<!-- Click Audio -->
 	<audio class="clickEffect">
-	  <source src="includes/sounds/click.mp3" type="audio/mp3">
-	  Your browser does not support the audio element.
+		<source src="includes/sounds/click.mp3" type="audio/mp3">
+		Your browser does not support the audio element.
 	</audio>
 
 	<section>
 		<div class="main">
-		
+
 			<div class="last-day-message"></div>
-			
+
 			<!-- Content -->
-				<div class="setting-container">
-			<!-- Ads blocker -->
+			<div class="setting-container">
+				<!-- Ads blocker -->
 				<p class="option-title inline noBorder">Ad Blocker</p>
 				<div class="section-seprate">
 					<div class="inline options-container">
@@ -78,13 +82,13 @@
 					</div>
 				</div>
 				<!-- More settings -->
-					<p class="option-title inline noBorder">More Options</p>
-					<div class="section-seprate">
-						<div class="inline options-container">
-							<span>More Options</span>
-							<a href="settings.html" class="a button">More Options</a>
-						</div>
+				<p class="option-title inline noBorder">More Options</p>
+				<div class="section-seprate">
+					<div class="inline options-container">
+						<span>More Options</span>
+						<a href="settings.html" class="a button">More Options</a>
 					</div>
+				</div>
 
 				<!-- themes -->
 				<p class="option-title inline noBorder">Theme</p>
@@ -101,55 +105,61 @@
 
 
 					<div class="inline options-container more-settings-options">
-						<button id="options" onclick="options()">Custom Theme<span class="arrow"> &#9660;</span></button>
+						<button id="options" onclick="options()">Custom Theme<span class="arrow">
+								&#9660;</span></button>
 						<div class="useful-options settings-options display">
 							<div class="options">
 
 								<div class="inline options-container options-container-settings">
 									<span>Background Color</span>
-									<input type="text" class="jscolor body" value="" placeholder="click to chose color">
+									<input type="color" class="body"  placeholder="click to chose color">
 								</div>
 
 								<div class="inline options-container options-container-settings">
 									<span>Tasbeeh Color</span>
-									<input type="text" class="jscolor" value="" placeholder="click to chose color">
+									<input type="color" class="tasbeeh-color"  placeholder="click to chose color">
 								</div>
 
 								<div class="inline options-container options-container-settings">
 									<span>Header Color</span>
-									<input type="text" class="jscolor" value="" placeholder="click to chose color">
+									<input type="color" class="header-color"  placeholder="click to chose color">
 								</div>
 
 								<div class="inline options-container options-container-settings">
 									<span>Header Text Color</span>
-									<input type="text" class="jscolor" value="" placeholder="click to chose color">
+									<input type="color" class="jscolor"  placeholder="click to chose color">
 								</div>
 
 								<div class="inline options-container options-container-settings">
 									<span>Header Options Color</span>
-									<input type="text" class="jscolor" value="" placeholder="click to chose color">
+									<input type="color" class="jscolor"  placeholder="click to chose color">
 								</div>
 
 								<div class="inline options-container options-container-settings">
 									<span>Footer Color</span>
-									<input type="text" class="jscolor" value="" placeholder="click to chose color">
+									<input type="color" class="footer-color"  placeholder="click to chose color">
 								</div>
 
 								<div class="inline options-container options-container-settings">
 									<span>Footer Text Color</span>
-									<input type="text" class="jscolor" value="" placeholder="click to chose color">
+									<input type="color" class="jscolor"  placeholder="click to chose color">
 								</div>
 
 								<div class="inline options-container options-container-settings">
 									<span>Buttons Color</span>
-									<input type="text" class="jscolor" value="" placeholder="click to chose color">
+									<input type="color" class="jscolor"  placeholder="click to chose color">
 								</div>
 
 								<div class="inline options-container options-container-settings">
 									<span>Textarea Color</span>
-									<input type="text" class="jscolor" value="" placeholder="click to chose color">
+									<input type="color" class="jscolor"  placeholder="click to chose color">
 								</div>
-								
+
+								<div class="inline options-container options-container-settings">
+									<span>Save Changes</span>
+									<button button btn-black btn-width-100>Save</button>
+								</div>
+
 							</div>
 						</div>
 					</div>
@@ -168,7 +178,7 @@
 						<input type="checkbox" class="switch beep">
 					</div>
 				</div>
-				
+
 				<!-- remember dates -->
 				<p class="option-title inline noBorder">Starting/End Date</p>
 				<div class="section-seprate">
@@ -176,14 +186,18 @@
 						<input type="input" class="start-date" placeholder="Starting Date">
 					</div>
 					<div class="inline options-container">
-						<div class="start"><!-- Starting Date --></div>
+						<div class="start">
+							<!-- Starting Date -->
+						</div>
 					</div>
 
 					<div class="inline options-container">
 						<input type="input" class="end-date" placeholder="Ending Date">
 					</div>
 					<div class="inline options-container">
-						<div class="end"><!-- Ending Date --></div>
+						<div class="end">
+							<!-- Ending Date -->
+						</div>
 					</div>
 
 					<div class="inline options-container">
@@ -192,33 +206,32 @@
 					<button class="option-green save-memory button">Remember Dates</button>
 					<button class="option-red delete-memory button">Delete Dates</button>
 				</div>
-				
+
 				<!-- Change tasbeeh name -->
 				<p class="option-title inline noBorder">Change Tasbeeh Name</p>
 				<div class="section-seprate">
 					<div class="inline options-container">
-						<input type="text" class="brand-name" placeholder="Tasbeeh Counter" 
-						maxlength="17">
+						<input type="text" class="brand-name" placeholder="Tasbeeh Counter" maxlength="17">
 					</div>
 					<button class="option-green save-name button">Save</button>
 					<button class="option-red reset-name button">Reset</button>
-					
+
 				</div>
 
-				<p class="option-title inline noBorder">Click Effect</p>
+				<p class="option-title inline noBorder">Defaulf Settings</p>
 				<div class="section-seprate">
 					<div class="inline options-container">
-						<button onclick="clearLocalStorage()">Clear All Data</button>
+						<button onclick="clearLocalStorage()" class="button btn-black btn-width-100">Rest</button>
 					</div>
 				</div>
-		</div>
+			</div>
 
 			<!-- Content -->
 
-		<div class="last-day-message"></div>
+			<div class="last-day-message"></div>
 
-		<span class="ads banner"></span>	
-	<!-- main div ends here -->
+			<span class="ads banner"></span>
+			<!-- main div ends here -->
 		</div>
 	</section>
 
@@ -256,7 +269,7 @@
 						<a href="about.html/#about" class="noDec">About</a>
 						<a href="about.html/#contact" class="noDec">Contact Us</a>
 						<a href="about.html/#contribute" class="noDec">Contribute</a>
-					</div>			
+					</div>
 
 					<div class="map footer-section">
 						<h2>Sitemap</h2>
@@ -268,7 +281,7 @@
 
 		</footer>
 	</section>
-	
+
 
 	<!--  Ads  -->
 	<div class="ads"></div>
@@ -281,14 +294,14 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
 	<script src="includes/jquery-ui-1.12.1/jquery-ui.js"></script>
 	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-	
+
 	<!-- Local Scripts -->
 	<script src="includes/js/jscolor.js"></script>
 	<script src="includes/js/vibrate.js"></script>
 	<script src="includes/js/tasbeeh-name.js"></script>
 	<script src="includes/js/theme.js"></script>
 	<script src="includes/js/switch.js"></script>
-	<script src="includes/js/ad-blocker.js"></script>	
+	<script src="includes/js/ad-blocker.js"></script>
 	<script src="includes/js/local-storage.js"></script>
 	<script src="includes/js/options.js"></script>
 	<script src="includes/js/target-counter.js"></script>
@@ -296,10 +309,11 @@
 	<script src="includes/js/header.js"></script>
 
 	<!-- propaller ads  code-->
-	
+
 
 	<!-- admaven ads -->
-	<div class="ad adScr"></div>	
-	
-</body>	
+	<div class="ad adScr"></div>
+
+</body>
+
 </html>

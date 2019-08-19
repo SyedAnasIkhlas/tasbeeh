@@ -392,11 +392,46 @@ $(document).ready(function()
      });
 
 
- $('.body').keyup(function() 
- {
-    bgColor = $('.body').val();
-    property = "backgroundColor";
-    className = "body";
-     customThemes("body", bgColor)
- });
+$('.body').change(function(event) 
+{
+    getColors('.body',"body")
+});
+
+$('.footer-color').change(function(event) 
+{
+    getColors('.footer-color',".footer-content")
+});
+
+$('.tasbeeh-color').change(function(event) 
+{
+    getColors('.tasbeeh-color',".tasbeeh")
+});
+
+$('.header-color').change(function(event) 
+{
+    getColors('.header-color',".nav")
+});
+
+$('.body').change(function(event) 
+{
+    getColors('.body',"body")
+});
+
+$('.footer-color').change(function(event) 
+{
+    getColors('.footer-color',".footer-content")
+});
+
+$('.body').change(function(event) 
+{
+    getColors('.body',"body")
+});
+
+$('.footer-color').change(function(event) 
+{
+    getColors('.footer-color',".footer-content")
+});
+
+
+ 
 	
