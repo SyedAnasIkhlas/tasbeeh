@@ -1,5 +1,6 @@
 currentAdsStatus()
 brandName();
+customThemeDisplay()
 
 const date_1 = $( ".start-date" ).val();
 const date_2 = $( ".end-date" ).val();
@@ -392,14 +393,9 @@ $(document).ready(function()
      });
 
 
-$('.body').change(function(event) 
+$('.body-color').change(function(event) 
 {
-    getColors('.body',"body")
-});
-
-$('.footer-color').change(function(event) 
-{
-    getColors('.footer-color',".footer-content")
+    getColors('.body-color',"body")
 });
 
 $('.tasbeeh-color').change(function(event) 
@@ -412,19 +408,26 @@ $('.header-color').change(function(event)
     getColors('.header-color',".nav")
 });
 
-$('.body').change(function(event) 
+$('.header-text-color').change(function(event) 
 {
-    getColors('.body',"body")
+    getColors('.header-text-color',"header")
 });
+
+
+$('.header-options-color').change(function(event) 
+{
+    getColors('.header-options-color',".menu.display")
+});
+
 
 $('.footer-color').change(function(event) 
 {
     getColors('.footer-color',".footer-content")
 });
 
-$('.body').change(function(event) 
+$('.footer-text-color').change(function(event) 
 {
-    getColors('.body',"body")
+    getColors('.footer-text-color',".footer-content",".footer-text-color")
 });
 
 $('.footer-color').change(function(event) 

@@ -64,12 +64,33 @@ function currentTheme() {
     }
 }
 
-function getColors(seletedInput,effectTo)
+function getColors(seletedInput,effectTo,textColor=null)
 {
         bgColor = $(seletedInput).val();
-        return customThemes(effectTo, bgColor);
+        if (textColor != null) {textColor = $(seletedInput).val(); bgColor = null;}
+        return customThemes(effectTo, bgColor,textColor);
 }
 
-function customThemes(className, bgColor) {
-    $(className).css({backgroundColor:bgColor});
+function customThemes(className, bgColor,textColor=null) 
+{
+    if (bgColor == null) {$(className).css({color:textColor});}
+    else{$(className).css({backgroundColor:bgColor});}
+    
+    localStorage.setItem(className,bgColor+textColor);
+    console.log(localStorage.getItem(className))
+}
+
+function runCustomTheme(className)
+{  
+   $(className).css({
+       backgroundColor:localStorage.getItem(className) ,
+       color:localStorage.getItem(className) 
+   });
+}
+
+function customThemeDisplay()
+{
+    runCustomTheme("body")
+    runCustomTheme(".nav")
+    runCustomTheme(".tasbeeh")
 }

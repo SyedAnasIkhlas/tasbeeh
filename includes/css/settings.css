@@ -30,9 +30,18 @@
     background-color:#484343;
     color:#fff;
 }
+
+.useful-options.settings-options
+{
+    padding:10px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
 .options-container-settings
 {
-    width:100%;
+    margin-right:0;
+    width:200px;
 }
 
 .options-container-settings span
@@ -42,7 +51,7 @@
 
 .options-container-settings input
 {
-    width:50%;
+    width:30%;
     border:1px solid #000;
 }
 

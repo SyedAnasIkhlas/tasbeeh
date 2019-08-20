@@ -181,7 +181,7 @@
 
 .noBorderBT{
 
-	border-bottom: none 
+	border-bottom: none;
 	border-top: none; 
 }
 
@@ -734,8 +734,8 @@
 
 .noPaddingBT{
 
-	padding-bottom: none 
-	padding-top: none; 
+	padding-bottom: none;
+	padding-top:none; 
 }
 
 
@@ -771,7 +771,7 @@ select
 {
 	height:40px;
 	border-radius:2px;
-	border:1px solid :#eee;
+	border:1px solid #eee;
 	background: #fff;
 }
 

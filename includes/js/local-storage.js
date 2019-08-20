@@ -15,5 +15,12 @@ function localStorageGetItem(item)
 
 function clearLocalStorage()
 {
-	localStorage.clear();
+	var confirmReset= confirm("Press 'Ok', if you want to clear all data");
+
+	 if (confirmReset == true) 
+	 {
+		localStorage.clear();
+		alert("Please,Refresh the page, to see the changes.")
+	 }
+	
 }
