@@ -29,8 +29,8 @@ function removeBrandNameLocalStorage()
 
 function brandName()
 {
-	
-	if(localStorage.getItem("brandName"))
+	const localBrandName = localStorage.getItem("brandName");
+	if(localBrandName != null)
 	{	
 		$(".brand_name").html("");
 		$(".brand_name").html(localStorage.getItem("brandName"));

@@ -56,7 +56,7 @@ function reset()
 	 if (confirmReset == true) 
 	 {
 		var reset = num * 0;
-		clickEffect();
+		// clickEffect();
 
 		var $el = $(".reset_button"),
 	    x = 100,
@@ -96,7 +96,7 @@ function addOne()
 	var numbers = $("#numbers").val();
 	var num = parseInt(numbers);
 	var addOne = num + 1;
-	clickEffect();
+	// clickEffect();
 
 	var $el = $(".add_button"),
     x = 100,
@@ -156,7 +156,7 @@ function deduct()
 	{
 		var deduct = num - 1;
 	}
-	clickEffect();
+	// clickEffect();
 
 	var $el = $(".deduct_button"),
     x = 100,
